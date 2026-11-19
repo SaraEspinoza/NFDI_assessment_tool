@@ -1,0 +1,3103 @@
+{
+ "version": "0.9-draft-proposal",
+ "source": {
+  "en": "Leitfaden für das NFDI-Dienstportfolio, Version 0.9 (ENTWURF). Answer patterns, indicators and scoring are proposals.",
+  "de": "Leitfaden für das NFDI-Dienstportfolio, Version 0.9 (ENTWURF). Antwortmuster, Indikatoren und Bewertung sind Vorschläge."
+ },
+ "updated": "2026-draft",
+ "types": [
+  {
+   "id": "software",
+   "label": {
+    "en": "Software / platform",
+    "de": "Software / Plattform"
+   }
+  },
+  {
+   "id": "storage",
+   "label": {
+    "en": "Storage, compute or repository",
+    "de": "Speicher, Rechenleistung oder Repositorium"
+   }
+  },
+  {
+   "id": "training",
+   "label": {
+    "en": "Training",
+    "de": "Training"
+   }
+  },
+  {
+   "id": "consulting",
+   "label": {
+    "en": "Consulting",
+    "de": "Beratung"
+   }
+  },
+  {
+   "id": "process",
+   "label": {
+    "en": "Process or workflow",
+    "de": "Prozess oder Workflow"
+   }
+  },
+  {
+   "id": "other",
+   "label": {
+    "en": "Other (e.g. vocabulary, standard)",
+    "de": "Sonstiges (z. B. Vokabular, Standard)"
+   }
+  }
+ ],
+ "criteria": [
+  {
+   "id": "k01",
+   "number": 1,
+   "title": {
+    "en": "Technical maturity and modern implementation",
+    "de": "Technische Reife und zeitgemäße Implementierung"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "checklist",
+   "checklistLabel": "Checklist",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The maturity of the service is stated, ideally with a model (TRL or Base4NFDI Service Readiness Level), and briefly justified. A qualitative description is also fine.",
+      "de": "Der Reifegrad des Dienstes ist angegeben, möglichst mit einem Modell (TRL oder Base4NFDI Service Readiness Level), und kurz begründet. Eine qualitative Beschreibung genügt ebenfalls."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service and its components are updated regularly.",
+      "de": "Der Dienst und seine Komponenten werden regelmäßig aktualisiert."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service uses current technology. If it uses an older technology, the reason is given.",
+      "de": "Der Dienst nutzt aktuelle Technologie. Wird eine ältere Technologie genutzt, ist der Grund angegeben."
+     }
+    },
+    {
+     "label": "Stated",
+     "text": {
+      "en": "The architecture is described and shows how it fits the NFDI architecture.",
+      "de": "Die Architektur ist beschrieben und zeigt, wie sie zur NFDI-Architektur passt."
+     }
+    },
+    {
+     "label": "Stated",
+     "text": {
+      "en": "The software quality is ensured: the software is documented and tested.",
+      "de": "Die Softwarequalität ist gesichert: Die Software ist dokumentiert und getestet."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The live service runs on stable, tested software.",
+      "de": "Der produktive Dienst läuft auf stabiler, getesteter Software."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "TRL or SRL statement, release history, CI test report, dependency list, architecture diagram",
+     "de": "TRL- oder SRL-Angabe, Release-Historie, CI-Testbericht, Liste der Abhängigkeiten, Architekturdiagramm"
+    },
+    "storage": {
+     "en": "Software version and support status, upgrade log, backup-tested restore, architecture description",
+     "de": "Softwareversion und Support-Status, Upgrade-Protokoll, getestete Wiederherstellung aus dem Backup, Architekturbeschreibung"
+    },
+    "other": {
+     "en": "Versioned releases, change log, validation checks, maintenance policy",
+     "de": "Versionierte Releases, Änderungsprotokoll, Validierungsprüfungen, Wartungsrichtlinie"
+    },
+    "training": {
+     "en": "Didactic concept, review of materials, update log (applied by analogy)",
+     "de": "Didaktisches Konzept, Prüfung der Materialien, Aktualisierungsprotokoll (sinngemäß angewendet)"
+    },
+    "consulting": {
+     "en": "Documented method, quality process, review of cases (by analogy)",
+     "de": "Dokumentierte Methode, Qualitätsprozess, Review von Fällen (sinngemäß)"
+    },
+    "process": {
+     "en": "Documented and tested process, version history, roles",
+     "de": "Dokumentierter und getesteter Prozess, Versionshistorie, Rollen"
+    }
+   },
+   "evidence": [
+    {
+     "en": "TRL or Service Readiness Level statement with the reason",
+     "de": "TRL- oder Service-Readiness-Level-Angabe mit Begründung"
+    },
+    {
+     "en": "Link to release notes or version history",
+     "de": "Link zu Release Notes oder Versionshistorie"
+    },
+    {
+     "en": "Test report or CI badge, with coverage if available",
+     "de": "Testbericht oder CI-Badge, wenn vorhanden mit Testabdeckung"
+    },
+    {
+     "en": "List of main components and their versions",
+     "de": "Liste der Hauptkomponenten und ihrer Versionen"
+    },
+    {
+     "en": "Architecture description and its relation to NFDI architecture",
+     "de": "Architekturbeschreibung und ihr Bezug zur NFDI-Architektur"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**TRL is not mandatory.** A qualitative description of the maturity is accepted.",
+     "de": "**TRL ist nicht verpflichtend.** Eine qualitative Beschreibung des Reifegrads wird akzeptiert."
+    },
+    {
+     "en": "An **older technology is acceptable** if you explain why it is proven and supported.",
+     "de": "Eine **ältere Technologie ist akzeptabel**, wenn Sie erklären, warum sie bewährt und unterstützt ist."
+    },
+    {
+     "en": "Name versions and dates. \"Up to date\" without dates cannot be checked.",
+     "de": "Nennen Sie Versionen und Daten. „Auf dem aktuellen Stand“ ohne Datumsangaben lässt sich nicht prüfen."
+    },
+    {
+     "en": "For early-stage services, state the current TRL honestly and describe the plan. Do not round it up.",
+     "de": "Geben Sie bei Diensten in früher Phase den aktuellen TRL ehrlich an und beschreiben Sie den Plan. Runden Sie nicht auf."
+    },
+    {
+     "en": "Security updates are a typical point to evidence. Do not claim a security certification here (see criterion 3).",
+     "de": "Sicherheitsupdates sind ein typischer Nachweis. Behaupten Sie hier keine Sicherheitszertifizierung (siehe Kriterium 3)."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Maturity",
+      "de": "1 Reifegrad"
+     },
+     "hint": {
+      "en": "The maturity is stated with a model and a short reason, or described qualitatively.",
+      "de": "Der Reifegrad ist mit einem Modell und einer kurzen Begründung angegeben oder qualitativ beschrieben."
+     },
+     "example": {
+      "en": "TRL [x]: system proven in operational environment. In production since [year] with [n] users.",
+      "de": "TRL [x]: System im operativen Umfeld erprobt. Im Produktivbetrieb seit [Jahr] mit [n] Nutzenden."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Updates",
+      "de": "2 Updates"
+     },
+     "hint": {
+      "en": "The service and its components are updated regularly.",
+      "de": "Der Dienst und seine Komponenten werden regelmäßig aktualisiert."
+     },
+     "example": {
+      "en": "Release every [interval]; security updates within [time]. Dependencies are monitored with [tool].",
+      "de": "Release alle [Intervall]; Sicherheitsupdates innerhalb von [Zeit]. Abhängigkeiten werden mit [Werkzeug] überwacht."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Stack",
+      "de": "3 Stack"
+     },
+     "hint": {
+      "en": "The technology is current, or the reason for an older proven one is given.",
+      "de": "Die Technologie ist aktuell, oder der Grund für eine ältere bewährte ist angegeben."
+     },
+     "example": {
+      "en": "Stack: [languages/frameworks and versions]. The older component [name] is kept because [reason].",
+      "de": "Stack: [Sprachen/Frameworks und Versionen]. Die ältere Komponente [Name] bleibt bestehen, weil [Grund]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 Architecture",
+      "de": "4 Architektur"
+     },
+     "hint": {
+      "en": "The architecture is described and linked to the NFDI architecture.",
+      "de": "Die Architektur ist beschrieben und mit der NFDI-Architektur verknüpft."
+     },
+     "example": {
+      "en": "The architecture is described at [link]. It follows [NFDI reference / description].",
+      "de": "Die Architektur ist unter [Link] beschrieben. Sie folgt [NFDI-Referenz / Beschreibung]."
+     }
+    },
+    {
+     "q": {
+      "en": "5 Quality",
+      "de": "5 Qualität"
+     },
+     "hint": {
+      "en": "The documentation and tests are shown.",
+      "de": "Dokumentation und Tests sind nachgewiesen."
+     },
+     "example": {
+      "en": "Tests run in CI ([link]). Documentation: [link].",
+      "de": "Tests laufen in CI ([Link]). Dokumentation: [Link]."
+     }
+    },
+    {
+     "q": {
+      "en": "6 Stability",
+      "de": "6 Stabilität"
+     },
+     "hint": {
+      "en": "The live service runs on a stable, tested version.",
+      "de": "Der produktive Dienst läuft auf einer stabilen, getesteten Version."
+     },
+     "example": {
+      "en": "The live service runs release [version], tested on [staging / test suite] before deployment.",
+      "de": "Der produktive Dienst läuft mit Release [Version], vor dem Deployment getestet auf [Staging / Testsuite]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "6 yes, each with checkable evidence (link, release list, test report)",
+      "de": "6 mit Ja, jeweils mit prüfbarem Beleg (Link, Release-Liste, Testbericht)"
+     },
+     "when": {
+      "minYes": 6
+     }
+    },
+    {
+     "result": "Partly met",
+     "rule": {
+      "en": "4 to 5 yes, and a dated plan for the rest",
+      "de": "4 bis 5 mit Ja und ein terminierter Plan für den Rest"
+     },
+     "when": {
+      "minYes": 4
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "3 or fewer yes, or only generic claims",
+      "de": "3 oder weniger mit Ja, oder nur allgemeine Aussagen"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Maturity cannot be reduced to one number. The rating counts how many of the six aspects you can show with evidence.",
+    "de": "Reife lässt sich nicht auf eine Zahl reduzieren. Die Bewertung zählt, wie viele der sechs Aspekte Sie belegen können."
+   },
+   "tags": []
+  },
+  {
+   "id": "k02",
+   "number": 2,
+   "title": {
+    "en": "Robustness and operational stability",
+    "de": "Robustheit und Betriebsstabilität"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "threelevel",
+   "checklistLabel": "Checks",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is stably and quickly available at its main usage times. Planned maintenance happens outside core working hours and is announced early.",
+      "de": "Der Dienst ist zu den Hauptnutzungszeiten stabil und schnell erreichbar. Geplante Wartung findet außerhalb der Kernarbeitszeiten statt und wird früh angekündigt."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Measures protect against failures. Critical components are redundant where possible, so that no single component can stop the service.",
+      "de": "Maßnahmen schützen vor Ausfällen. Kritische Komponenten sind nach Möglichkeit redundant, sodass keine einzelne Komponente den Dienst stoppen kann."
+     }
+    },
+    {
+     "label": "Mandatory",
+     "text": {
+      "en": "If the service stores data (such as usage statistics or research data), it is backed up regularly and automatically. A backup concept covers both the backup and the recovery after a failure.",
+      "de": "Speichert der Dienst Daten (etwa Nutzungsstatistiken oder Forschungsdaten), werden sie regelmäßig und automatisch gesichert. Ein Backup-Konzept deckt Sicherung und Wiederherstellung nach einem Ausfall ab."
+     }
+    },
+    {
+     "label": "Ideal",
+     "text": {
+      "en": "The provider commits to these measures, ideally in a service level agreement (SLA).",
+      "de": "Der Anbieter verpflichtet sich zu diesen Maßnahmen, idealerweise in einem Service-Level Agreement (SLA)."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Uptime figures, monitoring dashboard, SLA, backup and restore log",
+     "de": "Verfügbarkeitszahlen, Monitoring-Dashboard, SLA, Backup- und Wiederherstellungsprotokoll"
+    },
+    "storage": {
+     "en": "Backup schedule, restore test report, replication setup, capacity monitoring",
+     "de": "Backup-Plan, Bericht zum Wiederherstellungstest, Replikations-Setup, Kapazitätsüberwachung"
+    },
+    "other": {
+     "en": "Hosting setup, mirror, versioned archive",
+     "de": "Hosting-Setup, Spiegelserver, versioniertes Archiv"
+    },
+    "training": {
+     "en": "Backup of materials, continuity plan for trainers",
+     "de": "Backup der Materialien, Kontinuitätsplan für Trainierende"
+    },
+    "consulting": {
+     "en": "Staffing and cover arrangements, response continuity",
+     "de": "Personalplanung und Vertretungsregelungen, Kontinuität bei der Beantwortung von Anfragen"
+    },
+    "process": {
+     "en": "Run success rates, fallback procedure",
+     "de": "Erfolgsquoten der Läufe, Rückfallverfahren"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Availability figures or target for a stated period",
+     "de": "Verfügbarkeitszahlen oder -ziel für einen genannten Zeitraum"
+    },
+    {
+     "en": "Maintenance window policy and announcement channel",
+     "de": "Richtlinie zu Wartungsfenstern und Ankündigungskanal"
+    },
+    {
+     "en": "Backup concept and the date of the last restore test",
+     "de": "Backup-Konzept und Datum des letzten Wiederherstellungstests"
+    },
+    {
+     "en": "Description of redundant components or the reason for none",
+     "de": "Beschreibung redundanter Komponenten oder Begründung, warum keine vorhanden sind"
+    },
+    {
+     "en": "SLA or operating agreement, if one exists",
+     "de": "SLA oder Betriebsvereinbarung, falls vorhanden"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**Backup is the only strong requirement.** If you store data, you need an automated backup. A SLA is only \"ideal\".",
+     "de": "**Backup ist die einzige starke Anforderung.** Wenn Sie Daten speichern, brauchen Sie ein automatisiertes Backup. Ein SLA ist nur „ideal“."
+    },
+    {
+     "en": "\"Backup\" without a restore test is weak. Name the last test date.",
+     "de": "„Backup“ ohne Wiederherstellungstest ist schwach. Nennen Sie das Datum des letzten Tests."
+    },
+    {
+     "en": "Redundancy is only expected where it is possible. A single system is acceptable if you explain why.",
+     "de": "Redundanz wird nur erwartet, wo sie möglich ist. Ein einzelnes System ist akzeptabel, wenn Sie erklären, warum."
+    },
+    {
+     "en": "For services that store nothing, state \"not applicable\" with the reason.",
+     "de": "Geben Sie bei Diensten, die nichts speichern, „nicht anwendbar“ mit Begründung an."
+    },
+    {
+     "en": "Hosting on a partner or cloud does not remove your responsibility. Describe who does what.",
+     "de": "Hosting bei einem Partner oder in der Cloud entbindet Sie nicht von Ihrer Verantwortung. Beschreiben Sie, wer was tut."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Availability",
+      "de": "1 Verfügbarkeit"
+     },
+     "hint": {
+      "en": "Availability is shown with figures or monitoring, and maintenance windows are announced.",
+      "de": "Die Verfügbarkeit ist mit Zahlen oder Monitoring belegt, und Wartungsfenster werden angekündigt."
+     },
+     "kind": "Should",
+     "example": {
+      "en": "Availability target [x %] during [hours], measured [x %] in [period] ([link to monitoring]). Maintenance windows on [day/time], announced [n days] ahead via [channel].",
+      "de": "Verfügbarkeitsziel [x %] während [Zeiten], gemessen [x %] in [Zeitraum] ([Link zum Monitoring]). Wartungsfenster am [Tag/Zeit], Ankündigung [n Tage] vorher über [Kanal]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Redundancy",
+      "de": "2 Redundanz"
+     },
+     "hint": {
+      "en": "Critical components are redundant, or the reason for a single system is given.",
+      "de": "Kritische Komponenten sind redundant, oder der Grund für ein einzelnes System ist genannt."
+     },
+     "kind": "Should",
+     "example": {
+      "en": "Critical components are redundant ([list]). Or: the service runs on one server because [reason]; recovery time target [x hours].",
+      "de": "Kritische Komponenten sind redundant ([Liste]). Oder: Der Dienst läuft auf einem Server, weil [Grund]; Zielzeit für die Wiederherstellung [x Stunden]."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Backup",
+      "de": "3 Backup"
+     },
+     "hint": {
+      "en": "Stored data is backed up automatically and a recovery concept exists. Answer N/A if the service stores no data.",
+      "de": "Gespeicherte Daten werden automatisch gesichert, und ein Wiederherstellungskonzept existiert. Antworten Sie mit „Nicht anwendbar“, wenn der Dienst keine Daten speichert."
+     },
+     "kind": "Mandatory",
+     "example": {
+      "en": "Daily automated backups to [separate location]. Restore tested on [date].",
+      "de": "Tägliche automatisierte Backups an [getrennten Ort]. Wiederherstellung getestet am [Datum]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 SLA",
+      "de": "4 SLA"
+     },
+     "hint": {
+      "en": "A service level agreement or operating agreement exists.",
+      "de": "Ein Service-Level Agreement oder eine Betriebsvereinbarung existiert."
+     },
+     "kind": "Ideal",
+     "example": {
+      "en": "SLA or operating agreement: [link].",
+      "de": "SLA oder Betriebsvereinbarung: [Link]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "Availability stated with evidence (figures, monitoring), redundancy addressed or reasoned, and automated backup with a restore concept where data is stored",
+      "de": "Verfügbarkeit mit Belegen angegeben (Zahlen, Monitoring), Redundanz behandelt oder begründet, und automatisiertes Backup mit Wiederherstellungskonzept, wo Daten gespeichert werden"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "result": "Met for the stage",
+     "rule": {
+      "en": "Gaps exist but are named, with a dated plan; backup is at least in place for stored data or the data is only a copy",
+      "de": "Lücken bestehen, sind aber benannt und mit terminiertem Plan versehen; ein Backup ist zumindest für gespeicherte Daten vorhanden oder die Daten sind nur eine Kopie"
+     },
+     "when": {
+      "required": [
+       2
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "Data is stored without any backup concept or plan, or no information",
+      "de": "Daten werden ohne Backup-Konzept oder -Plan gespeichert, oder es gibt keine Angaben"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Some items are only expected where possible, and young services cannot show a track record yet. A middle level gives credit to services that name their gaps and have a plan.",
+    "de": "Einige Punkte werden nur erwartet, wo sie möglich sind, und junge Dienste können noch keine Erfolgsbilanz zeigen. Eine mittlere Stufe würdigt Dienste, die ihre Lücken benennen und einen Plan haben."
+   },
+   "tags": []
+  },
+  {
+   "id": "k03",
+   "number": 3,
+   "title": {
+    "en": "Information security",
+    "de": "Informationssicherheit"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "checklist",
+   "checklistLabel": "Checklist",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "Technical and organisational measures protect the confidentiality, integrity and availability of the service and its data.",
+      "de": "Technische und organisatorische Maßnahmen schützen Vertraulichkeit, Integrität und Verfügbarkeit des Dienstes und seiner Daten."
+     }
+    },
+    {
+     "label": "Ideal",
+     "text": {
+      "en": "The operator runs an information security management system (ISMS) and has appointed an information security officer.",
+      "de": "Der Betreiber führt ein Informationssicherheitsmanagementsystem (ISMS) und hat eine:n Informationssicherheitsbeauftragte:n ernannt."
+     }
+    },
+    {
+     "label": "Ideal",
+     "text": {
+      "en": "The service or its operator is certified, for example under BSI-Grundschutz or ISO 27001.",
+      "de": "Der Dienst oder sein Betreiber ist zertifiziert, zum Beispiel nach BSI-Grundschutz oder ISO 27001."
+     }
+    },
+    {
+     "label": "Mandatory",
+     "text": {
+      "en": "A contact address for IT security incidents exists.",
+      "de": "Eine Kontaktadresse für IT-Sicherheitsvorfälle existiert."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "A structured procedure for responding to security incidents is in place.",
+      "de": "Ein strukturiertes Verfahren zur Reaktion auf Sicherheitsvorfälle ist eingerichtet."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Security policy, patching process, access control description, incident contact, certificate",
+     "de": "Sicherheitsrichtlinie, Patch-Prozess, Beschreibung der Zugriffskontrolle, Kontakt für Vorfälle, Zertifikat"
+    },
+    "storage": {
+     "en": "Encryption and access concept, backup protection, audit logs, certification of the data centre",
+     "de": "Verschlüsselungs- und Zugriffskonzept, Schutz der Backups, Audit-Logs, Zertifizierung des Rechenzentrums"
+    },
+    "other": {
+     "en": "Hosting security, integrity checks of releases",
+     "de": "Sicherheit des Hostings, Integritätsprüfungen der Releases"
+    },
+    "training": {
+     "en": "Handling of participant data, platform security of the learning system",
+     "de": "Umgang mit Teilnehmendendaten, Plattformsicherheit des Lernsystems"
+    },
+    "consulting": {
+     "en": "Rules for handling client data",
+     "de": "Regeln zum Umgang mit Kundendaten"
+    },
+    "process": {
+     "en": "Access rules for workflow tools and data",
+     "de": "Zugriffsregeln für Workflow-Werkzeuge und Daten"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Short description of measures (access, patching, encryption, logging)",
+     "de": "Kurze Beschreibung der Maßnahmen (Zugriff, Patching, Verschlüsselung, Logging)"
+    },
+    {
+     "en": "Incident contact address and the procedure behind it",
+     "de": "Kontaktadresse für Vorfälle und das dahinterliegende Verfahren"
+    },
+    {
+     "en": "Certificate or statement on ISMS, with validity date",
+     "de": "Zertifikat oder Aussage zum ISMS, mit Gültigkeitsdatum"
+    },
+    {
+     "en": "Name or role of the security officer",
+     "de": "Name oder Rolle der Sicherheitsbeauftragten"
+    },
+    {
+     "en": "Hosting agreement if run by a third party",
+     "de": "Hosting-Vereinbarung, wenn Dritte den Betrieb übernehmen"
+    }
+   ],
+   "tips": [
+    {
+     "en": "The **mandatory item is the contact address**. Certification is ideal, not required.",
+     "de": "Der **verpflichtende Punkt ist die Kontaktadresse**. Zertifizierung ist ideal, aber nicht erforderlich."
+    },
+    {
+     "en": "Do not publish sensitive security details. Describe measures at a general level.",
+     "de": "Veröffentlichen Sie keine sensiblen Sicherheitsdetails. Beschreiben Sie Maßnahmen auf allgemeiner Ebene."
+    },
+    {
+     "en": "If the service runs on an institution's IT, refer to the institution's policy and state what the service adds.",
+     "de": "Wenn der Dienst auf der IT einer Einrichtung läuft, verweisen Sie auf deren Richtlinie und beschreiben Sie, was der Dienst ergänzt."
+    },
+    {
+     "en": "Technical security details are checked by the provider's own IT security office, so describe the measures in general terms.",
+     "de": "Technische Sicherheitsdetails prüft die IT-Sicherheitsstelle des Anbieters. Beschreiben Sie die Maßnahmen daher allgemein."
+    },
+    {
+     "en": "Keep the contact current. An outdated address counts as missing.",
+     "de": "Halten Sie den Kontakt aktuell. Eine veraltete Adresse gilt als fehlend."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Measures",
+      "de": "1 Maßnahmen"
+     },
+     "hint": {
+      "en": "Technical and organisational measures are described.",
+      "de": "Technische und organisatorische Maßnahmen sind beschrieben."
+     },
+     "kind": "Should",
+     "example": {
+      "en": "Measures: [access control, patching, logging, encryption]. Security policy: [link].",
+      "de": "Maßnahmen: [Zugriffskontrolle, Patching, Logging, Verschlüsselung]. Sicherheitsrichtlinie: [Link]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Contact",
+      "de": "2 Kontakt"
+     },
+     "hint": {
+      "en": "A contact address for security incidents exists.",
+      "de": "Eine Kontaktadresse für Sicherheitsvorfälle existiert."
+     },
+     "kind": "**Mandatory**",
+     "example": {
+      "en": "Incident contact: [functional address].",
+      "de": "Kontakt für Vorfälle: [Funktionsadresse]."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Incident response",
+      "de": "3 Incident Response"
+     },
+     "hint": {
+      "en": "A structured incident response procedure exists.",
+      "de": "Ein strukturiertes Verfahren zur Reaktion auf Vorfälle existiert."
+     },
+     "kind": "Should",
+     "example": {
+      "en": "Incident response process: [link or short procedure], handled by [team].",
+      "de": "Incident-Response-Prozess: [Link oder kurzes Verfahren], bearbeitet durch [Team]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 ISMS / officer",
+      "de": "4 ISMS / Beauftragte:r"
+     },
+     "hint": {
+      "en": "An ISMS is in place, or a security officer is named.",
+      "de": "Ein ISMS ist eingerichtet, oder eine Sicherheitsbeauftragte bzw. ein Sicherheitsbeauftragter ist benannt."
+     },
+     "kind": "Ideal",
+     "example": {
+      "en": "ISMS based on [standard]. Security officer: [name/role].",
+      "de": "ISMS nach [Standard]. Sicherheitsbeauftragte:r: [Name/Rolle]."
+     }
+    },
+    {
+     "q": {
+      "en": "5 Certification",
+      "de": "5 Zertifizierung"
+     },
+     "hint": {
+      "en": "A certificate is shown, with its validity date.",
+      "de": "Ein Zertifikat liegt vor, mit Gültigkeitsdatum."
+     },
+     "kind": "Ideal",
+     "example": {
+      "en": "Certified under [ISO 27001 / BSI-Grundschutz], valid until [date] ([certificate link]).",
+      "de": "Zertifiziert nach [ISO 27001 / BSI-Grundschutz], gültig bis [Datum] ([Link zum Zertifikat])."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "Questions 1 to 3 are yes with evidence. 4 and 5 are recorded as information, they do not decide",
+      "de": "Die Fragen 1 bis 3 sind mit Ja und Beleg beantwortet. 4 und 5 werden als Information erfasst und sind nicht entscheidend"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "result": "Partly met",
+     "rule": {
+      "en": "Question 2 is yes and a dated plan covers the others",
+      "de": "Frage 2 ist Ja und ein terminierter Plan deckt die übrigen ab"
+     },
+     "when": {
+      "required": [
+       1
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "Question 2 is no, or only generic claims",
+      "de": "Frage 2 ist Nein, oder nur allgemeine Aussagen"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Only the contact address is mandatory. The other items are ideal or recommended, so a checklist shows the gaps better than a yes/no.",
+    "de": "Nur die Kontaktadresse ist verpflichtend. Die übrigen Punkte sind ideal oder empfohlen, daher zeigt eine Checkliste die Lücken besser als ein Ja/Nein."
+   },
+   "tags": []
+  },
+  {
+   "id": "k04",
+   "number": 4,
+   "title": {
+    "en": "Responsibilities",
+    "de": "Verantwortlichkeiten"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "binary",
+   "checklistLabel": "Checks",
+   "asks": [
+    {
+     "label": "Mandatory",
+     "text": {
+      "en": "A legally sound imprint (Impressum) is linked on the central entry page of the service. It clearly names the institution that operates the service.",
+      "de": "Ein rechtssicheres Impressum ist auf der zentralen Einstiegsseite des Dienstes verlinkt. Es nennt klar die Einrichtung, die den Dienst betreibt."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The operating institution is named, with its contact details.",
+      "de": "Die betreibende Institution ist mit Kontaktdaten genannt."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service owner, the person responsible for content and strategy, is named.",
+      "de": "Der Service Owner, die für Inhalt und Strategie verantwortliche Person, ist genannt."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The data protection officer of the operating institution is named, with contact details.",
+      "de": "Die oder der Datenschutzbeauftragte der betreibenden Institution ist mit Kontaktdaten genannt."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The information security officer of the operating institution is named, with contact details.",
+      "de": "Die oder der Informationssicherheitsbeauftragte der betreibenden Institution ist mit Kontaktdaten genannt."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "A contact for security incidents is named, for example an incident response team.",
+      "de": "Ein Kontakt für Sicherheitsvorfälle ist genannt, zum Beispiel ein Incident-Response-Team."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The NFDI consortium or consortia that operate and/or fund the service are named.",
+      "de": "Das NFDI-Konsortium oder die Konsortien, die den Dienst betreiben und/oder fördern, sind genannt."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Imprint link on entry page, portfolio metadata sheet",
+     "de": "Impressum-Link auf der Einstiegsseite, Metadatenblatt für das Portfolio"
+    },
+    "storage": {
+     "en": "Imprint, data protection and security contacts, consortium assignment",
+     "de": "Impressum, Kontakte für Datenschutz und Sicherheit, Zuordnung zum Konsortium"
+    },
+    "other": {
+     "en": "Maintainer, publisher, steering group, contact",
+     "de": "Maintainer, Herausgeber, Steuerungsgruppe, Kontakt"
+    },
+    "training": {
+     "en": "Organiser, contact, responsible person",
+     "de": "Veranstalter, Kontakt, verantwortliche Person"
+    },
+    "consulting": {
+     "en": "Responsible unit and contact",
+     "de": "Verantwortliche Stelle und Kontakt"
+    },
+    "process": {
+     "en": "Process owner and operator",
+     "de": "Prozessverantwortliche:r und Betreiber"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Link to the imprint on the entry page",
+     "de": "Link zum Impressum auf der Einstiegsseite"
+    },
+    {
+     "en": "Completed metadata sheet: provider, service owner, officers, incident contact, consortium",
+     "de": "Ausgefülltes Metadatenblatt: Anbieter, Service Owner, Beauftragte, Kontakt für Vorfälle, Konsortium"
+    },
+    {
+     "en": "Names and contact data, or functional addresses, with the date they were checked",
+     "de": "Namen und Kontaktdaten oder Funktionsadressen, mit dem Datum der Prüfung"
+    }
+   ],
+   "tips": [
+    {
+     "en": "This is the **most factual criterion**. It can be checked by looking at the page and the metadata sheet.",
+     "de": "Dies ist das **sachlichste Kriterium**. Es lässt sich durch einen Blick auf die Seite und das Metadatenblatt prüfen."
+    },
+    {
+     "en": "Functional addresses are safer than personal names when roles change. Give a name or a functional address, with contact details.",
+     "de": "Funktionsadressen sind bei wechselnden Rollen sicherer als Personennamen. Geben Sie einen Namen oder eine Funktionsadresse an, mit Kontaktdaten."
+    },
+    {
+     "en": "The imprint must identify the **operator**, not only a project name.",
+     "de": "Das Impressum muss den **Betreiber** kennzeichnen, nicht nur einen Projektnamen."
+    },
+    {
+     "en": "Keep the information current. Persons and officers change.",
+     "de": "Halten Sie die Angaben aktuell. Personen und Beauftragte wechseln."
+    },
+    {
+     "en": "Legal soundness of the imprint is for the institution's legal office.",
+     "de": "Die rechtliche Belastbarkeit des Impressums ist Sache der Rechtsabteilung der Einrichtung."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Imprint",
+      "de": "1 Impressum"
+     },
+     "hint": {
+      "en": "A legally sound imprint is linked on the entry page and names the operating institution.",
+      "de": "Ein rechtssicheres Impressum ist auf der Einstiegsseite verlinkt und nennt die betreibende Institution."
+     },
+     "kind": "Mandatory",
+     "example": {
+      "en": "Imprint: [link on entry page], names [institution].",
+      "de": "Impressum: [Link auf der Einstiegsseite], nennt [Einrichtung]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Provider",
+      "de": "2 Anbieter"
+     },
+     "hint": {
+      "en": "The operating institution is named, with contact details.",
+      "de": "Die betreibende Institution ist mit Kontaktdaten genannt."
+     },
+     "example": {
+      "en": "Provider: [institution], contact [name, address].",
+      "de": "Anbieter: [Einrichtung], Kontakt [Name, Adresse]."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Service owner",
+      "de": "3 Service Owner"
+     },
+     "hint": {
+      "en": "The service owner is named.",
+      "de": "Der Service Owner ist genannt."
+     },
+     "example": {
+      "en": "Service owner: [name].",
+      "de": "Service Owner: [Name]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 Data protection",
+      "de": "4 Datenschutz"
+     },
+     "hint": {
+      "en": "The data protection officer is named, with contact details.",
+      "de": "Die oder der Datenschutzbeauftragte ist mit Kontaktdaten genannt."
+     },
+     "example": {
+      "en": "Data protection officer: [name, contact].",
+      "de": "Datenschutzbeauftragte:r: [Name, Kontakt]."
+     }
+    },
+    {
+     "q": {
+      "en": "5 Security officer",
+      "de": "5 Sicherheitsbeauftragte:r"
+     },
+     "hint": {
+      "en": "The information security officer is named, with contact details.",
+      "de": "Die oder der Informationssicherheitsbeauftragte ist mit Kontaktdaten genannt."
+     },
+     "example": {
+      "en": "Information security officer: [name, contact].",
+      "de": "Informationssicherheitsbeauftragte:r: [Name, Kontakt]."
+     }
+    },
+    {
+     "q": {
+      "en": "6 Incident contact",
+      "de": "6 Kontakt für Vorfälle"
+     },
+     "hint": {
+      "en": "A contact for security incidents is named.",
+      "de": "Ein Kontakt für Sicherheitsvorfälle ist genannt."
+     },
+     "example": {
+      "en": "Incident contact: [address or team].",
+      "de": "Kontakt für Vorfälle: [Adresse oder Team]."
+     }
+    },
+    {
+     "q": {
+      "en": "7 Consortium",
+      "de": "7 Konsortium"
+     },
+     "hint": {
+      "en": "The NFDI consortium or consortia are named.",
+      "de": "Das NFDI-Konsortium oder die Konsortien sind genannt."
+     },
+     "example": {
+      "en": "Consortium: operated by [consortium] and/or funded by [consortium].",
+      "de": "Konsortium: betrieben von [Konsortium] und/oder gefördert von [Konsortium]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "The imprint is linked on the entry page and identifies the operator, and all six metadata items are supplied",
+      "de": "Das Impressum ist auf der Einstiegsseite verlinkt und kennzeichnet den Betreiber, und alle sechs Metadatenpunkte sind geliefert"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "The imprint is missing or not linked, or any metadata item is missing",
+      "de": "Das Impressum fehlt oder ist nicht verlinkt, oder ein Metadatenpunkt fehlt"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": "",
+   "tags": []
+  },
+  {
+   "id": "k05",
+   "number": 5,
+   "title": {
+    "en": "Data protection compliance",
+    "de": "Einhaltung des Datenschutzes"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "checklist",
+   "checklistLabel": "Checklist",
+   "asks": [
+    {
+     "label": "Mandatory",
+     "text": {
+      "en": "Personal data is processed only as the law allows, and users are told how it is processed.",
+      "de": "Personenbezogene Daten werden nur im Rahmen des Rechts verarbeitet, und die Nutzenden erfahren, wie sie verarbeitet werden."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service complies with the GDPR (DSGVO) and other laws on personal data.",
+      "de": "Der Dienst hält die DSGVO und weitere Gesetze zu personenbezogenen Daten ein."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Privacy notice, processing record, DPO contact, processor agreements",
+     "de": "Datenschutzerklärung, Verarbeitungsverzeichnis, Kontakt der Datenschutzbeauftragten, Verträge mit Auftragsverarbeitern"
+    },
+    "storage": {
+     "en": "Terms for depositors, access rules, retention policy, anonymisation approach",
+     "de": "Bedingungen für Einstellende, Zugriffsregeln, Aufbewahrungsrichtlinie, Anonymisierungskonzept"
+    },
+    "other": {
+     "en": "Statement that no personal data is processed (or contributor data policy)",
+     "de": "Aussage, dass keine personenbezogenen Daten verarbeitet werden (oder Richtlinie zu Beitragenden-Daten)"
+    },
+    "training": {
+     "en": "Handling of participant data and recordings",
+     "de": "Umgang mit Teilnehmendendaten und Aufzeichnungen"
+    },
+    "consulting": {
+     "en": "Handling of client data and confidentiality",
+     "de": "Umgang mit Kundendaten und Vertraulichkeit"
+    },
+    "process": {
+     "en": "Data flow description with personal data points",
+     "de": "Beschreibung des Datenflusses mit den Stellen personenbezogener Daten"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Privacy notice link",
+     "de": "Link zur Datenschutzerklärung"
+    },
+    {
+     "en": "Name and contact of the data protection officer",
+     "de": "Name und Kontakt der Datenschutzbeauftragten"
+    },
+    {
+     "en": "Statement on whether personal data is processed",
+     "de": "Aussage, ob personenbezogene Daten verarbeitet werden"
+    },
+    {
+     "en": "Processing record or description (purpose, basis, retention)",
+     "de": "Verarbeitungsverzeichnis oder Beschreibung (Zweck, Grundlage, Aufbewahrung)"
+    },
+    {
+     "en": "Processor agreements, if any",
+     "de": "Verträge mit Auftragsverarbeitern, falls vorhanden"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**\"No personal data\" is a valid answer** if it is credible. Log files and login data often count as personal data.",
+     "de": "**„Keine personenbezogenen Daten“ ist eine gültige Antwort**, wenn sie glaubwürdig ist. Log-Dateien und Login-Daten zählen oft als personenbezogene Daten."
+    },
+    {
+     "en": "Do not copy legal conclusions into the answer. Describe what exists.",
+     "de": "Übernehmen Sie keine rechtlichen Schlussfolgerungen in die Antwort. Beschreiben Sie, was vorhanden ist."
+    },
+    {
+     "en": "Ask your institution's data protection officer to confirm the answer.",
+     "de": "Bitten Sie die Datenschutzbeauftragte Ihrer Einrichtung, die Antwort zu bestätigen."
+    },
+    {
+     "en": "The assessment only checks that the statements exist. It is not a legal assessment.",
+     "de": "Die Bewertung prüft nur, ob die Aussagen vorliegen. Sie ist keine rechtliche Bewertung."
+    },
+    {
+     "en": "Do not mix this with criterion 3. Data protection is about people's data, security is about protecting the service.",
+     "de": "Vermischen Sie dies nicht mit Kriterium 3. Datenschutz betrifft die Daten von Personen, Sicherheit betrifft den Schutz des Dienstes."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Scope",
+      "de": "1 Geltungsbereich"
+     },
+     "hint": {
+      "en": "It is stated whether personal data is processed.",
+      "de": "Es ist angegeben, ob personenbezogene Daten verarbeitet werden."
+     },
+     "example": {
+      "en": "The service processes [account data, log data]. Or: it processes no personal data because [reason].",
+      "de": "Der Dienst verarbeitet [Kontodaten, Log-Daten]. Oder: Er verarbeitet keine personenbezogenen Daten, weil [Grund]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Transparency",
+      "de": "2 Transparenz"
+     },
+     "hint": {
+      "en": "If personal data is processed, a privacy notice is linked.",
+      "de": "Werden personenbezogene Daten verarbeitet, ist eine Datenschutzerklärung verlinkt."
+     },
+     "example": {
+      "en": "Privacy notice: [link].",
+      "de": "Datenschutzerklärung: [Link]."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Responsibility",
+      "de": "3 Verantwortung"
+     },
+     "hint": {
+      "en": "The data protection officer of the operator is named.",
+      "de": "Die oder der Datenschutzbeauftragte des Betreibers ist benannt."
+     },
+     "example": {
+      "en": "Data protection officer: [name/contact].",
+      "de": "Datenschutzbeauftragte:r: [Name/Kontakt]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 Processing",
+      "de": "4 Verarbeitung"
+     },
+     "hint": {
+      "en": "The processing is documented: purpose, legal basis and retention.",
+      "de": "Die Verarbeitung ist dokumentiert: Zweck, Rechtsgrundlage und Aufbewahrung."
+     },
+     "example": {
+      "en": "Processing recorded in [register]: purpose [purpose], legal basis [basis], retention [period].",
+      "de": "Verarbeitung erfasst in [Verzeichnis]: Zweck [Zweck], Rechtsgrundlage [Grundlage], Speicherdauer [Zeitraum]."
+     }
+    },
+    {
+     "q": {
+      "en": "5 Third parties",
+      "de": "5 Dritte"
+     },
+     "hint": {
+      "en": "Processors and data transfers are stated, or it is stated that there are none.",
+      "de": "Auftragsverarbeiter und Datenübermittlungen sind genannt, oder es ist angegeben, dass es keine gibt."
+     },
+     "example": {
+      "en": "Processors: [list] with agreements. Transfers outside the EU: [none / basis].",
+      "de": "Auftragsverarbeiter: [Liste] mit Vereinbarungen. Übermittlungen außerhalb der EU: [keine / Grundlage]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "All applicable questions are yes. If no personal data is processed, question 1 with a credible explanation is enough",
+      "de": "Alle zutreffenden Fragen sind mit Ja beantwortet. Werden keine personenbezogenen Daten verarbeitet, genügt Frage 1 mit glaubwürdiger Erklärung"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "Any applicable question is no, or no statement is given",
+      "de": "Eine zutreffende Frage ist mit Nein beantwortet, oder es gibt keine Aussage"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": {
+    "en": "The rating checks that statements exist. It is not a legal assessment.",
+    "de": "Die Bewertung prüft, ob Aussagen vorliegen. Sie ist keine rechtliche Bewertung."
+   },
+   "whyForm": {
+    "en": "Only whether the required statements and documents exist can be checked here. Legal compliance itself is not assessed.",
+    "de": "Hier lässt sich nur prüfen, ob die erforderlichen Aussagen und Dokumente vorliegen. Die rechtliche Konformität selbst wird nicht bewertet."
+   },
+   "tags": []
+  },
+  {
+   "id": "k06",
+   "number": 6,
+   "title": {
+    "en": "Service desk and support",
+    "de": "Service Desk und Support"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "binary",
+   "checklistLabel": "Checks",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is connected to a support channel (helpdesk).",
+      "de": "Der Dienst ist an einen Support-Kanal (Helpdesk) angebunden."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "A direct, accessible link to the support channel (ticket system, form or functional email address) is placed prominently on the entry page and in the documentation.",
+      "de": "Ein direkter, barrierefreier Link zum Support-Kanal (Ticketsystem, Formular oder Funktions-E-Mail-Adresse) ist auf der Einstiegsseite und in der Dokumentation gut sichtbar platziert."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Support requests are generally answered within 48 hours.",
+      "de": "Support-Anfragen werden in der Regel innerhalb von 48 Stunden beantwortet."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Support link on entry page and in docs, ticket statistics, response time policy",
+     "de": "Support-Link auf der Einstiegsseite und in der Dokumentation, Ticketstatistik, Richtlinie zu Antwortzeiten"
+    },
+    "storage": {
+     "en": "Helpdesk link, user guide, ticket response statistics",
+     "de": "Link zum Helpdesk, Benutzerhandbuch, Statistik zu Ticket-Antwortzeiten"
+    },
+    "other": {
+     "en": "Issue tracker or mailing list, response commitments",
+     "de": "Issue Tracker oder Mailingliste, Zusagen zu Antwortzeiten"
+    },
+    "training": {
+     "en": "Contact for questions, response to participant emails",
+     "de": "Kontakt für Fragen, Beantwortung von E-Mails der Teilnehmenden"
+    },
+    "consulting": {
+     "en": "The offer itself, plus a contact for follow-up",
+     "de": "Das Angebot selbst, plus ein Kontakt für Rückfragen"
+    },
+    "process": {
+     "en": "Contact for process owner, issue tracker",
+     "de": "Kontakt der Prozessverantwortlichen, Issue Tracker"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Screenshot or link of the entry page with the support link",
+     "de": "Screenshot oder Link der Einstiegsseite mit dem Support-Link"
+    },
+    {
+     "en": "Link in the documentation",
+     "de": "Link in der Dokumentation"
+    },
+    {
+     "en": "Ticket statistics or a statement of the response commitment",
+     "de": "Ticketstatistik oder Aussage zur Antwortzusage"
+    },
+    {
+     "en": "Name of the team that handles requests",
+     "de": "Name des Teams, das Anfragen bearbeitet"
+    }
+   ],
+   "tips": [
+    {
+     "en": "Requests must be answered within 48 hours **in general**. Occasional misses do not fail the criterion, but your statistics should show the norm.",
+     "de": "Anfragen müssen **in der Regel** innerhalb von 48 Stunden beantwortet werden. Gelegentliche Überschreitungen lassen das Kriterium nicht scheitern, aber Ihre Statistik sollte die Norm zeigen."
+    },
+    {
+     "en": "A functional email address is accepted as support channel.",
+     "de": "Eine Funktions-E-Mail-Adresse wird als Support-Kanal akzeptiert."
+    },
+    {
+     "en": "A new service without statistics can meet the criterion with a clear 48-hour commitment and show figures later. A bare claim with no commitment and no figures is not met.",
+     "de": "Ein neuer Dienst ohne Statistik kann das Kriterium mit einer klaren 48-Stunden-Zusage erfüllen und später Zahlen nachliefern. Eine bloße Behauptung ohne Zusage und ohne Zahlen ist nicht erfüllt."
+    },
+    {
+     "en": "Check the link is **accessible** (barrierefrei).",
+     "de": "Prüfen Sie, dass der Link **barrierefrei** ist."
+    },
+    {
+     "en": "Consider listing office hours or holiday cover.",
+     "de": "Erwägen Sie, Sprechzeiten oder Urlaubsvertretung anzugeben."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Channel",
+      "de": "1 Kanal"
+     },
+     "hint": {
+      "en": "The service is connected to a support channel: ticket system, form or functional email address.",
+      "de": "Der Dienst ist an einen Support-Kanal angebunden: Ticketsystem, Formular oder Funktions-E-Mail-Adresse."
+     },
+     "example": {
+      "en": "Support via [ticket system / form / functional email], handled by [team].",
+      "de": "Support über [Ticketsystem / Formular / Funktions-E-Mail], bearbeitet durch [Team]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Visibility",
+      "de": "2 Sichtbarkeit"
+     },
+     "hint": {
+      "en": "The link to the support channel is on the entry page and in the documentation.",
+      "de": "Der Link zum Support-Kanal steht auf der Einstiegsseite und in der Dokumentation."
+     },
+     "example": {
+      "en": "Support link on the entry page ([link]) and in the documentation ([link]).",
+      "de": "Support-Link auf der Einstiegsseite ([Link]) und in der Dokumentation ([Link])."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Response time",
+      "de": "3 Antwortzeit"
+     },
+     "hint": {
+      "en": "Requests are generally answered within 48 hours, shown by ticket statistics or a service commitment.",
+      "de": "Anfragen werden in der Regel innerhalb von 48 Stunden beantwortet, belegt durch Ticketstatistik oder eine Service-Zusage."
+     },
+     "example": {
+      "en": "Response target 48 hours on working days. Last [period]: median first response [x hours], [n] tickets.",
+      "de": "Antwortziel 48 Stunden an Werktagen. Letzte [Zeitraum]: mediane erste Antwort [x Stunden], [n] Tickets."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "A support channel is linked on the entry page and in the documentation, and a response time (in general 48 hours) is stated with evidence such as ticket statistics or a service commitment",
+      "de": "Ein Support-Kanal ist auf der Einstiegsseite und in der Dokumentation verlinkt, und eine Antwortzeit (in der Regel 48 Stunden) wird mit Beleg genannt, etwa Ticketstatistik oder Service-Zusage"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "No visible channel, the link is missing in one of the two places, or no evidence for the response time",
+      "de": "Kein sichtbarer Kanal, der Link fehlt an einer der beiden Stellen, oder kein Beleg für die Antwortzeit"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": "",
+   "tags": []
+  },
+  {
+   "id": "k07",
+   "number": 7,
+   "title": {
+    "en": "Usability and accessibility",
+    "de": "Usability und Barrierefreiheit"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "checklist",
+   "checklistLabel": "Tests to run",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The target group can use the service without disproportionate effort: the documentation is clear, getting started is easy and the service fits into research workflows.",
+      "de": "Die Zielgruppe kann den Dienst ohne unverhältnismäßigen Aufwand nutzen: Die Dokumentation ist verständlich, der Einstieg ist leicht und der Dienst passt in Forschungsworkflows."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service looks and behaves consistently: fonts, colours, controls and interactions are the same throughout.",
+      "de": "Der Dienst sieht überall gleich aus und verhält sich gleich: Schriftarten, Farben, Bedienelemente und Interaktionen sind einheitlich."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is designed to be accessible and follows the current WCAG 2.1 guidelines.",
+      "de": "Der Dienst ist barrierefrei gestaltet und orientiert sich an den aktuellen WCAG-2.1-Richtlinien."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service works on different devices and screen sizes.",
+      "de": "Der Dienst funktioniert auf verschiedenen Geräten und Bildschirmgrößen."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Key actions take as few steps as possible.",
+      "de": "Zentrale Aktionen erfordern möglichst wenige Schritte."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is available at least in German and English.",
+      "de": "Der Dienst ist mindestens auf Deutsch und Englisch verfügbar."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Accessibility report, user test summary, screenshots on devices, language switch",
+     "de": "Barrierefreiheitsbericht, Zusammenfassung der Nutzertests, Screenshots auf Geräten, Sprachumschaltung"
+    },
+    "storage": {
+     "en": "Walkthrough of deposit and search steps, accessibility report",
+     "de": "Durchgang durch Einstell- und Suchschritte, Barrierefreiheitsbericht"
+    },
+    "other": {
+     "en": "Readable documentation, browsable HTML view, accessibility of the portal",
+     "de": "Lesbare Dokumentation, durchsuchbare HTML-Ansicht, Barrierefreiheit des Portals"
+    },
+    "training": {
+     "en": "Accessible materials (captions, structure), language versions",
+     "de": "Barrierefreie Materialien (Untertitel, Struktur), Sprachversionen"
+    },
+    "consulting": {
+     "en": "Access conditions, language options",
+     "de": "Zugangsbedingungen, Sprachoptionen"
+    },
+    "process": {
+     "en": "Clear step-by-step guide, number of steps",
+     "de": "Klare Schritt-für-Schritt-Anleitung, Anzahl der Schritte"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Accessibility test result with tool and date",
+     "de": "Ergebnis des Barrierefreiheitstests mit Werkzeug und Datum"
+    },
+    {
+     "en": "User feedback or test summary",
+     "de": "Nutzerfeedback oder Zusammenfassung der Tests"
+    },
+    {
+     "en": "List of supported languages",
+     "de": "Liste der unterstützten Sprachen"
+    },
+    {
+     "en": "Screenshots on different screen sizes",
+     "de": "Screenshots in verschiedenen Bildschirmgrößen"
+    },
+    {
+     "en": "Style guide or design system, if any",
+     "de": "Styleguide oder Designsystem, falls vorhanden"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**\"Orientiert sich an WCAG 2.1\"** means aiming at it. Full conformance is not demanded in the text.",
+     "de": "**„Orientiert sich an WCAG 2.1“** heißt, es wird angestrebt. Volle Konformität wird im Text nicht verlangt."
+    },
+    {
+     "en": "German **and** English are expected at least. One language alone is a gap to explain.",
+     "de": "Deutsch **und** Englisch werden mindestens erwartet. Eine einzelne Sprache ist eine Lücke, die erklärt werden sollte."
+    },
+    {
+     "en": "A command-line service can still show usability through documentation and clear errors.",
+     "de": "Ein Kommandozeilendienst kann Usability dennoch durch Dokumentation und klare Fehlermeldungen zeigen."
+    },
+    {
+     "en": "Automated tests find only part of the issues. Add a manual check.",
+     "de": "Automatisierte Tests finden nur einen Teil der Probleme. Ergänzen Sie eine manuelle Prüfung."
+    },
+    {
+     "en": "Accessibility statements and legal duties are for the institution's accessibility officer.",
+     "de": "Barrierefreiheitserklärungen und rechtliche Pflichten sind Sache der Beauftragten für Barrierefreiheit der Einrichtung."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "Accessibility",
+      "de": "Barrierefreiheit"
+     },
+     "hint": {
+      "en": "An automated WCAG 2.1 check and a short manual keyboard test were done. Tool and date are noted.",
+      "de": "Eine automatisierte WCAG-2.1-Prüfung und ein kurzer manueller Tastaturtest wurden durchgeführt. Werkzeug und Datum sind festgehalten."
+     },
+     "example": {
+      "en": "Accessibility check with [tool] on [date]: [result, WCAG 2.1 level]. Manual keyboard test: [result].",
+      "de": "Barrierefreiheitsprüfung mit [Werkzeug] am [Datum]: [Ergebnis, WCAG-2.1-Stufe]. Manueller Tastaturtest: [Ergebnis]."
+     }
+    },
+    {
+     "q": {
+      "en": "Responsiveness",
+      "de": "Responsivität"
+     },
+     "hint": {
+      "en": "The service was checked on a phone-size and a desktop-size screen.",
+      "de": "Der Dienst wurde auf einem Bildschirm in Smartphone- und in Desktop-Größe geprüft."
+     },
+     "example": {
+      "en": "Layout tested on [devices / screen sizes]: [result].",
+      "de": "Layout getestet auf [Geräten / Bildschirmgrößen]: [Ergebnis]."
+     }
+    },
+    {
+     "q": {
+      "en": "Language",
+      "de": "Sprache"
+     },
+     "hint": {
+      "en": "The interface and documentation are available in German and English.",
+      "de": "Oberfläche und Dokumentation sind auf Deutsch und Englisch verfügbar."
+     },
+     "example": {
+      "en": "Interface and documentation in German and English ([link]).",
+      "de": "Oberfläche und Dokumentation auf Deutsch und Englisch ([Link])."
+     }
+    },
+    {
+     "q": {
+      "en": "Usability",
+      "de": "Usability"
+     },
+     "hint": {
+      "en": "1 to 3 key tasks were tried through, and the steps and problems are noted.",
+      "de": "1 bis 3 zentrale Aufgaben wurden durchgespielt, und Schritte und Probleme sind festgehalten."
+     },
+     "example": {
+      "en": "User test with [n] participants on [tasks]: [steps and problems found].",
+      "de": "Nutzertest mit [n] Teilnehmenden zu [Aufgaben]: [gefundene Schritte und Probleme]."
+     }
+    },
+    {
+     "q": {
+      "en": "Consistency",
+      "de": "Konsistenz"
+     },
+     "hint": {
+      "en": "Fonts, colours and controls were checked on 3 pages and are consistent.",
+      "de": "Schriftarten, Farben und Bedienelemente wurden auf 3 Seiten geprüft und sind einheitlich."
+     },
+     "example": {
+      "en": "Style guide or design system: [link]. Checked on [3 pages].",
+      "de": "Styleguide oder Designsystem: [Link]. Geprüft auf [3 Seiten]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Pass",
+     "rule": {
+      "en": "No blocking issues in the tests, both languages available",
+      "de": "Keine blockierenden Probleme in den Tests, beide Sprachen verfügbar"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    {
+     "result": "Partly",
+     "rule": {
+      "en": "Issues are found but are listed with a dated fix plan",
+      "de": "Probleme werden gefunden, sind aber mit terminiertem Behebungsplan aufgelistet"
+     },
+     "when": {
+      "minYes": 3
+     }
+    },
+    {
+     "result": "Fail",
+     "rule": {
+      "en": "Blocking issues without a plan, or no tests",
+      "de": "Blockierende Probleme ohne Plan, oder keine Tests"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Usability and accessibility are best shown by tests. A test result is more reliable evidence than a statement.",
+    "de": "Usability und Barrierefreiheit zeigt man am besten durch Tests. Ein Testergebnis ist ein verlässlicherer Beleg als eine Aussage."
+   },
+   "tags": []
+  },
+  {
+   "id": "k08",
+   "number": 8,
+   "title": {
+    "en": "Documentation",
+    "de": "Dokumentation"
+   },
+   "category": "technisch-organisatorisch",
+   "form": "checklist",
+   "checklistLabel": "Checklist",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "Current documentation is publicly available at a permanent link.",
+      "de": "Eine aktuelle Dokumentation ist unter einem dauerhaften Link öffentlich zugänglich."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "A getting-started guide explains the technical requirements and the login.",
+      "de": "Eine Anleitung für den Einstieg erklärt die technischen Voraussetzungen und das Login."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The core functions are described with concrete examples from research.",
+      "de": "Die Kernfunktionen sind mit konkreten Beispielen aus der Forschung beschrieben."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The scope and limits of the service are stated: what users can expect and what not. For example, if there is no backup, users are told to keep their own copies.",
+      "de": "Leistungsumfang und Grenzen des Dienstes sind genannt: was Nutzende erwarten können und was nicht. Gibt es zum Beispiel kein Backup, werden Nutzende aufgefordert, eigene Kopien zu behalten."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "If the service uses self-developed code, the code is documented according to common standards.",
+      "de": "Nutzt der Dienst selbst entwickelten Code, ist dieser nach gängigen Standards dokumentiert."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "If the service offers programming interfaces, they are documented, for example with an API specification.",
+      "de": "Bietet der Dienst Programmierschnittstellen, sind sie dokumentiert, zum Beispiel mit einer API-Spezifikation."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Docs site, API specification, code comments, release notes",
+     "de": "Dokumentationsseite, API-Spezifikation, Code-Kommentare, Release Notes"
+    },
+    "storage": {
+     "en": "Deposit and access guide, metadata documentation, API specification",
+     "de": "Anleitung für Einstellen und Zugriff, Dokumentation der Metadaten, API-Spezifikation"
+    },
+    "other": {
+     "en": "Specification, usage guide, examples, change log",
+     "de": "Spezifikation, Nutzungsanleitung, Beispiele, Änderungsprotokoll"
+    },
+    "training": {
+     "en": "Syllabus, learning objectives, materials list",
+     "de": "Lehrplan, Lernziele, Materialliste"
+    },
+    "consulting": {
+     "en": "Service description, process, scope and limits",
+     "de": "Dienstbeschreibung, Ablauf, Leistungsumfang und Beschränkungen"
+    },
+    "process": {
+     "en": "Step description, roles, tools, examples",
+     "de": "Beschreibung der Schritte, Rollen, Werkzeuge, Beispiele"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Documentation URL (permanent)",
+     "de": "URL der Dokumentation (dauerhaft)"
+    },
+    {
+     "en": "Getting started section",
+     "de": "Abschnitt „Erste Schritte“"
+    },
+    {
+     "en": "Function overview with examples",
+     "de": "Funktionsübersicht mit Beispielen"
+    },
+    {
+     "en": "Statement of scope and limits",
+     "de": "Aussage zu Leistungsumfang und Beschränkungen"
+    },
+    {
+     "en": "Code and API documentation links, or reasons they do not apply",
+     "de": "Links zur Code- und API-Dokumentation oder Gründe, warum sie nicht zutreffen"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**No fixed format is required.** A README plus a wiki can be enough if the core areas are covered.",
+     "de": "**Es wird kein festes Format verlangt.** Ein README plus ein Wiki kann genügen, wenn die Kernbereiche abgedeckt sind."
+    },
+    {
+     "en": "The link must be **permanent**. A project page that may disappear is a risk.",
+     "de": "Der Link muss **dauerhaft** sein. Eine Projektseite, die verschwinden kann, ist ein Risiko."
+    },
+    {
+     "en": "Say what the service does **not** do. This is part of the criterion.",
+     "de": "Sagen Sie, was der Dienst **nicht** leistet. Das gehört zum Kriterium."
+    },
+    {
+     "en": "Mark areas that do not apply (no API, no own code) with a reason.",
+     "de": "Kennzeichnen Sie Bereiche, die nicht zutreffen (keine API, kein eigener Code), mit einer Begründung."
+    },
+    {
+     "en": "Keep docs versioned with the software so they stay current.",
+     "de": "Halten Sie die Dokumentation zusammen mit der Software versioniert, damit sie aktuell bleibt."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Link",
+      "de": "1 Link"
+     },
+     "hint": {
+      "en": "Public documentation exists at a permanent link.",
+      "de": "Eine öffentliche Dokumentation existiert unter einem dauerhaften Link."
+     },
+     "example": {
+      "en": "Documentation: [permanent URL], last updated [date].",
+      "de": "Dokumentation: [dauerhafte URL], zuletzt aktualisiert [Datum]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Getting started",
+      "de": "2 Erste Schritte"
+     },
+     "hint": {
+      "en": "A getting-started guide explains the prerequisites and the login.",
+      "de": "Eine Einstiegsanleitung erklärt die Voraussetzungen und das Login."
+     },
+     "example": {
+      "en": "Getting started: [link], with prerequisites and login steps.",
+      "de": "Erste Schritte: [Link], mit Voraussetzungen und Login-Schritten."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Functions",
+      "de": "3 Funktionen"
+     },
+     "hint": {
+      "en": "The core functions are described with scientific examples.",
+      "de": "Die Kernfunktionen sind mit wissenschaftlichen Beispielen beschrieben."
+     },
+     "example": {
+      "en": "Functions with [n] examples: [link].",
+      "de": "Funktionen mit [n] Beispielen: [Link]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 Scope and limits",
+      "de": "4 Leistungsumfang und Beschränkungen"
+     },
+     "hint": {
+      "en": "The scope and limits are stated: what to expect and what not.",
+      "de": "Leistungsumfang und Grenzen sind genannt: was zu erwarten ist und was nicht."
+     },
+     "example": {
+      "en": "Scope and limits: [link], for example no backup, users keep their own copies.",
+      "de": "Leistungsumfang und Grenzen: [Link], zum Beispiel kein Backup, Nutzende behalten eigene Kopien."
+     }
+    },
+    {
+     "q": {
+      "en": "5 Code",
+      "de": "5 Code"
+     },
+     "hint": {
+      "en": "Own code is documented, or this does not apply.",
+      "de": "Eigener Code ist dokumentiert, oder dies trifft nicht zu."
+     },
+     "example": {
+      "en": "Code documentation: [link, standard used]. Or: no own code.",
+      "de": "Code-Dokumentation: [Link, genutzter Standard]. Oder: kein eigener Code."
+     }
+    },
+    {
+     "q": {
+      "en": "6 Interfaces",
+      "de": "6 Schnittstellen"
+     },
+     "hint": {
+      "en": "The API is documented, or this does not apply.",
+      "de": "Die API ist dokumentiert, oder dies trifft nicht zu."
+     },
+     "example": {
+      "en": "API specification: [OpenAPI link]. Or: no API.",
+      "de": "API-Spezifikation: [OpenAPI-Link]. Oder: keine API."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "All applicable questions are yes, and the documentation is dated or versioned",
+      "de": "Alle zutreffenden Fragen sind mit Ja beantwortet, und die Dokumentation ist datiert oder versioniert"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    {
+     "result": "Partly met",
+     "rule": {
+      "en": "Questions 1 to 3 are yes and a dated plan covers the rest",
+      "de": "Die Fragen 1 bis 3 sind mit Ja beantwortet und ein terminierter Plan deckt den Rest ab"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "Question 1 or 2 is no, or no documentation",
+      "de": "Frage 1 oder 2 ist Nein, oder keine Dokumentation"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Documentation has several areas of different weight. The checklist shows which areas exist.",
+    "de": "Dokumentation hat mehrere Bereiche mit unterschiedlichem Gewicht. Die Checkliste zeigt, welche Bereiche vorhanden sind."
+   },
+   "tags": []
+  },
+  {
+   "id": "k09",
+   "number": 9,
+   "title": {
+    "en": "Training offers",
+    "de": "Trainingsangebote"
+   },
+   "category": "technisch-organisatorisch, fachlich",
+   "form": "threelevel",
+   "checklistLabel": "Checks",
+   "asks": [
+    {
+     "label": "Optional",
+     "text": {
+      "en": "Training events and materials are offered that explain at least how to get started with the service. (Optional. Training can also be the purpose of the service itself.)",
+      "de": "Es werden Trainingsveranstaltungen und -materialien angeboten, die zumindest den Einstieg in den Dienst erklären. (Optional. Training kann auch der Zweck des Dienstes selbst sein.)"
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The training covers most functions of the service.",
+      "de": "Das Training deckt die meisten Funktionen des Dienstes ab."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The training formats suit the typical users: written documentation, help in the service, videos, online courses or on-site events.",
+      "de": "Die Trainingsformate passen zu den typischen Nutzenden: schriftliche Dokumentation, Hilfe im Dienst, Videos, Online-Kurse oder Veranstaltungen vor Ort."
+     }
+    },
+    {
+     "label": "Ideal",
+     "text": {
+      "en": "The training material is easy to reuse in RDM courses, and open licences (e.g. CC-BY) are shown where they apply.",
+      "de": "Das Trainingsmaterial lässt sich leicht in FDM-Kursen nachnutzen, und offene Lizenzen (z. B. CC-BY) sind angegeben, wo sie zutreffen."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The provider keeps training events and materials up to date.",
+      "de": "Der Anbieter hält Trainingsveranstaltungen und -materialien aktuell."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Tutorials, videos, in-app help, workshop records, licence of materials",
+     "de": "Tutorials, Videos, Hilfe in der Anwendung, Workshop-Aufzeichnungen, Lizenz der Materialien"
+    },
+    "storage": {
+     "en": "Depositor guides, webinars, example datasets",
+     "de": "Anleitungen für Einstellende, Webinare, Beispieldatensätze"
+    },
+    "other": {
+     "en": "Introduction course, examples, hands-on exercises",
+     "de": "Einführungskurs, Beispiele, praktische Übungen"
+    },
+    "training": {
+     "en": "Curriculum, participant numbers, feedback, reuse",
+     "de": "Curriculum, Teilnehmendenzahlen, Feedback, Nachnutzung"
+    },
+    "consulting": {
+     "en": "Briefing material, FAQ derived from cases",
+     "de": "Briefing-Material, aus Fällen abgeleitete FAQ"
+    },
+    "process": {
+     "en": "Walkthrough, sample run, checklists",
+     "de": "Durchgang, Beispiellauf, Checklisten"
+    }
+   },
+   "evidence": [
+    {
+     "en": "List of training offers with dates and formats",
+     "de": "Liste der Trainingsangebote mit Terminen und Formaten"
+    },
+    {
+     "en": "Links to materials with licence",
+     "de": "Links zu Materialien mit Lizenz"
+    },
+    {
+     "en": "Coverage statement (which functions are explained)",
+     "de": "Aussage zur Abdeckung (welche Funktionen erklärt werden)"
+    },
+    {
+     "en": "Last update date",
+     "de": "Datum der letzten Aktualisierung"
+    },
+    {
+     "en": "Participant feedback, if available",
+     "de": "Feedback der Teilnehmenden, falls vorhanden"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**Training is not mandatory.** A good guide may be enough. State why.",
+     "de": "**Training ist nicht verpflichtend.** Eine gute Anleitung kann genügen. Begründen Sie das."
+    },
+    {
+     "en": "Reuse is **ideal**. A CC-BY licence makes inclusion in RDM courses easier.",
+     "de": "Nachnutzung ist **ideal**. Eine CC-BY-Lizenz erleichtert die Aufnahme in FDM-Kurse."
+    },
+    {
+     "en": "If training is itself the service, assess it mainly under purpose (11) and use (12).",
+     "de": "Ist Training selbst der Dienst, bewerten Sie es vor allem unter Zweck (11) und Nutzung (12)."
+    },
+    {
+     "en": "Dated materials matter. State the last update.",
+     "de": "Datierte Materialien sind wichtig. Geben Sie die letzte Aktualisierung an."
+    },
+    {
+     "en": "Note the overlap with criterion 8: documentation is the base, training adds guidance.",
+     "de": "Beachten Sie die Überschneidung mit Kriterium 8: Dokumentation ist die Basis, Training ergänzt die Anleitung."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Coverage",
+      "de": "1 Abdeckung"
+     },
+     "hint": {
+      "en": "Training or materials cover most functions of the service. Answer N/A if this service needs no training.",
+      "de": "Training oder Materialien decken die meisten Funktionen des Dienstes ab. Antworten Sie mit „Nicht anwendbar“, wenn dieser Dienst kein Training braucht."
+     },
+     "example": {
+      "en": "Training covers [x of y] functions ([link]).",
+      "de": "Das Training deckt [x von y] Funktionen ab ([Link])."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Tailoring",
+      "de": "2 Zuschnitt"
+     },
+     "hint": {
+      "en": "The training formats suit the typical users.",
+      "de": "Die Trainingsformate passen zu den typischen Nutzenden."
+     },
+     "example": {
+      "en": "Formats: [written guide, video, live workshop] for [user group].",
+      "de": "Formate: [schriftliche Anleitung, Video, Live-Workshop] für [Nutzendengruppe]."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Currency",
+      "de": "3 Aktualität"
+     },
+     "hint": {
+      "en": "The materials are dated and up to date.",
+      "de": "Die Materialien sind datiert und aktuell."
+     },
+     "example": {
+      "en": "Materials last updated [date]; workshop last held [date].",
+      "de": "Materialien zuletzt aktualisiert [Datum]; Workshop zuletzt durchgeführt [Datum]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 Reuse",
+      "de": "4 Nachnutzung"
+     },
+     "hint": {
+      "en": "Licence terms (e.g. CC-BY) are stated where they apply.",
+      "de": "Lizenzbedingungen (z. B. CC-BY) sind angegeben, wo sie zutreffen."
+     },
+     "kind": "Ideal",
+     "example": {
+      "en": "Materials under [CC-BY] at [repository, DOI].",
+      "de": "Materialien unter [CC-BY] in [Repositorium, DOI]."
+     }
+    },
+    {
+     "q": {
+      "en": "5 Plan",
+      "de": "5 Plan"
+     },
+     "hint": {
+      "en": "Anything that is missing is covered by a dated plan. Answer N/A if nothing is missing.",
+      "de": "Alles, was fehlt, ist durch einen terminierten Plan abgedeckt. Antworten Sie mit „Nicht anwendbar“, wenn nichts fehlt."
+     },
+     "example": {
+      "en": "Planned: [missing item] by [date].",
+      "de": "Geplant: [fehlender Punkt] bis [Datum]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "Training or materials cover most functions, fit the user group, are dated and up to date, and licence terms are stated where applicable. A reasoned \"not applicable\" also counts",
+      "de": "Training oder Materialien decken die meisten Funktionen ab, passen zur Nutzendengruppe, sind datiert und aktuell, und Lizenzbedingungen werden, wo anwendbar, genannt. Ein begründetes „nicht anwendbar“ zählt ebenfalls"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "result": "Met for the stage",
+     "rule": {
+      "en": "Training or update is planned with a date, or materials exist but are partly outdated",
+      "de": "Training oder Aktualisierung ist mit Datum geplant, oder Materialien existieren, sind aber teilweise veraltet"
+     },
+     "when": {
+      "requiredYes": [
+       4
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "Training is claimed but cannot be shown, or the service clearly needs training and there is no plan",
+      "de": "Training wird behauptet, kann aber nicht gezeigt werden, oder der Dienst braucht eindeutig Training und es gibt keinen Plan"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Training is optional, so not having it is not a failure. The rating depends on whether the offer fits the service.",
+    "de": "Training ist optional, daher ist sein Fehlen kein Scheitern. Die Bewertung hängt davon ab, ob das Angebot zum Dienst passt."
+   },
+   "tags": []
+  },
+  {
+   "id": "k10",
+   "number": 10,
+   "title": {
+    "en": "Interoperability",
+    "de": "Interoperabilität"
+   },
+   "category": "technisch-organisatorisch, fachlich",
+   "form": "checklist",
+   "checklistLabel": "Checklist",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service uses suitable standards from the discipline and across disciplines, and it is shown that relevant standards, especially NFDI standards, are taken into account.",
+      "de": "Der Dienst nutzt geeignete fachliche und fachübergreifende Standards, und es ist dargelegt, dass relevante Standards, insbesondere NFDI-Standards, berücksichtigt werden."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service supports collaboration and data exchange with other services and infrastructures.",
+      "de": "Der Dienst unterstützt Zusammenarbeit und Datenaustausch mit anderen Diensten und Infrastrukturen."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Technical interoperability is described: the connected services are named, with the open or community-established interfaces, APIs and protocols used. It is stated whether a connection to the NFDI-AAI via IAM4NFDI exists or is planned.",
+      "de": "Die technische Interoperabilität ist beschrieben: Die angebundenen Dienste sind genannt, mit den genutzten offenen oder in der Community etablierten Schnittstellen, APIs und Protokollen. Es ist angegeben, ob eine Anbindung an die NFDI-AAI über IAM4NFDI besteht oder geplant ist."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Semantic interoperability is described: the metadata standards, data models, terminologies, vocabularies and identifiers are named, and it is stated whether they are established.",
+      "de": "Die semantische Interoperabilität ist beschrieben: Metadatenstandards, Datenmodelle, Terminologien, Vokabulare und Identifikatoren sind genannt, und es ist angegeben, ob sie etabliert sind."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Operational interoperability is described: the research or infrastructure workflows the service is part of, or is planned for, are named.",
+      "de": "Die operative Interoperabilität ist beschrieben: Die Forschungs- oder Infrastruktur-Workflows, in die der Dienst eingebunden oder für die er vorgesehen ist, sind genannt."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "API specification, supported protocols, AAI status, list of integrations",
+     "de": "API-Spezifikation, unterstützte Protokolle, AAI-Status, Liste der Integrationen"
+    },
+    "storage": {
+     "en": "Metadata schema, export formats, harvesting interfaces, PID use",
+     "de": "Metadatenschema, Exportformate, Harvesting-Schnittstellen, Nutzung von PIDs"
+    },
+    "other": {
+     "en": "Alignment with other vocabularies, mapping tables, uptake by other services",
+     "de": "Abgleich mit anderen Vokabularen, Mapping-Tabellen, Nachnutzung durch andere Dienste"
+    },
+    "training": {
+     "en": "Links and reuse in other offers, open formats",
+     "de": "Links und Nachnutzung in anderen Angeboten, offene Formate"
+    },
+    "consulting": {
+     "en": "Referrals to partner services",
+     "de": "Verweise auf Partnerdienste"
+    },
+    "process": {
+     "en": "Workflow description with tools and hand-over points",
+     "de": "Workflow-Beschreibung mit Werkzeugen und Übergabepunkten"
+    }
+   },
+   "evidence": [
+    {
+     "en": "List of standards used, with links",
+     "de": "Liste der genutzten Standards mit Links"
+    },
+    {
+     "en": "API or interface documentation",
+     "de": "API- oder Schnittstellendokumentation"
+    },
+    {
+     "en": "AAI (IAM4NFDI) status",
+     "de": "Status der AAI (IAM4NFDI)"
+    },
+    {
+     "en": "Metadata schemas and vocabularies used",
+     "de": "Genutzte Metadatenschemata und Vokabulare"
+    },
+    {
+     "en": "Workflow or integration description, including planned ones",
+     "de": "Beschreibung von Workflow oder Integration, auch geplanter"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**Planned integrations count.** Give a date for each.",
+     "de": "**Geplante Integrationen zählen.** Nennen Sie für jede ein Datum."
+    },
+    {
+     "en": "Name the standards with links. \"Standards are used\" cannot be checked.",
+     "de": "Nennen Sie die Standards mit Links. „Es werden Standards genutzt“ lässt sich nicht prüfen."
+    },
+    {
+     "en": "NFDI standards are expected to be considered. See the NFDI standards guideline cited in the criterion.",
+     "de": "Es wird erwartet, dass NFDI-Standards berücksichtigt werden. Siehe den im Kriterium zitierten Leitfaden zu NFDI-Standards."
+    },
+    {
+     "en": "A standalone service can still be interoperable through open formats.",
+     "de": "Ein eigenständiger Dienst kann durch offene Formate dennoch interoperabel sein."
+    },
+    {
+     "en": "The EOSC-based guiding questions in the criterion are a good outline for the answer.",
+     "de": "Die EOSC-basierten Leitfragen im Kriterium sind eine gute Gliederung für die Antwort."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Standards",
+      "de": "1 Standards"
+     },
+     "hint": {
+      "en": "Relevant standards, including NFDI standards, are named.",
+      "de": "Relevante Standards, einschließlich NFDI-Standards, sind genannt."
+     },
+     "example": {
+      "en": "Standards used: [list with links]. NFDI standards considered: [list].",
+      "de": "Genutzte Standards: [Liste mit Links]. Berücksichtigte NFDI-Standards: [Liste]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Technical",
+      "de": "2 Technisch"
+     },
+     "hint": {
+      "en": "Connected services and interfaces are named, and the IAM4NFDI/AAI status is stated.",
+      "de": "Angebundene Dienste und Schnittstellen sind genannt, und der Status von IAM4NFDI/AAI ist angegeben."
+     },
+     "example": {
+      "en": "Connected to [services] via [REST API, OAI-PMH, ...]. AAI via IAM4NFDI: [connected / planned for date].",
+      "de": "Angebunden an [Dienste] über [REST-API, OAI-PMH, ...]. AAI über IAM4NFDI: [angebunden / geplant für Datum]."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Semantic",
+      "de": "3 Semantisch"
+     },
+     "hint": {
+      "en": "Metadata standards, vocabularies and identifiers are named.",
+      "de": "Metadatenstandards, Vokabulare und Identifikatoren sind genannt."
+     },
+     "example": {
+      "en": "Metadata: [DCAT, schema.org, domain schema]. Vocabularies: [list]. Identifiers: [DOI, ORCID, ...].",
+      "de": "Metadaten: [DCAT, schema.org, Fachschema]. Vokabulare: [Liste]. Identifikatoren: [DOI, ORCID, ...]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 Operational",
+      "de": "4 Operativ"
+     },
+     "hint": {
+      "en": "Workflows are named, existing or planned.",
+      "de": "Workflows sind genannt, bestehende oder geplante."
+     },
+     "example": {
+      "en": "Part of [workflow]. Planned integration into [workflow] by [date].",
+      "de": "Teil von [Workflow]. Geplante Integration in [Workflow] bis [Datum]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "4 yes. \"Planned\" counts as yes if a date is given",
+      "de": "4 mit Ja. „Geplant“ zählt als Ja, wenn ein Datum angegeben ist"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    },
+    {
+     "result": "Partly met",
+     "rule": {
+      "en": "2 to 3 yes and a dated plan for the rest",
+      "de": "2 bis 3 mit Ja und ein terminierter Plan für den Rest"
+     },
+     "when": {
+      "minYes": 2
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "0 to 1 yes, or only generic claims",
+      "de": "0 bis 1 mit Ja, oder nur allgemeine Aussagen"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Interoperability has three areas, and their weight depends on the role of the service. The checklist shows the coverage per area.",
+    "de": "Interoperabilität hat drei Bereiche, deren Gewicht von der Rolle des Dienstes abhängt. Die Checkliste zeigt die Abdeckung je Bereich."
+   },
+   "tags": []
+  },
+  {
+   "id": "k11",
+   "number": 11,
+   "title": {
+    "en": "Purpose and benefit",
+    "de": "Zweck und Nutzen"
+   },
+   "category": "fachlich",
+   "form": "checklist",
+   "checklistLabel": "Checks",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service has a clearly defined purpose in research data management and gives researchers a benefit they can see right away.",
+      "de": "Der Dienst hat einen klar umrissenen Zweck im Forschungsdatenmanagement und bietet Forschenden einen sofort erkennbaren Nutzen."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The purpose is described: the concrete RDM need the service addresses and how it contributes to the FAIR principles.",
+      "de": "Der Zweck ist beschrieben: der konkrete FDM-Bedarf, den der Dienst adressiert, und sein Beitrag zu den FAIR-Prinzipien."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The target group is named as concretely as possible, for example researchers of one discipline, researchers across disciplines, service operators or infrastructure institutions.",
+      "de": "Die Zielgruppe ist so konkret wie möglich benannt, zum Beispiel Forschende einer Disziplin, disziplinübergreifend Forschende, Dienstbetreibende oder Infrastruktureinrichtungen."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The added value for the target group is described, for example saved time or cost, higher FAIRness, efficiency, standardisation or new research results. It is stated whether users adopt the service for this reason and whether they take part in evaluations.",
+      "de": "Der Mehrwert für die Zielgruppe ist beschrieben, zum Beispiel Zeit- oder Kostenersparnis, höhere FAIRness, Effizienz, Standardisierung oder neue Forschungsergebnisse. Es ist angegeben, ob Nutzende den Dienst deshalb annehmen und ob sie an Evaluationen beteiligt sind."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The benefit is illustrated with application examples, existing workflows, methods or concepts.",
+      "de": "Der Nutzen ist mit Anwendungsbeispielen, bestehenden Arbeitsabläufen, Methoden oder Konzepten veranschaulicht."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Use cases, workflow descriptions, before and after comparison",
+     "de": "Anwendungsfälle, Workflow-Beschreibungen, Vorher-nachher-Vergleich"
+    },
+    "storage": {
+     "en": "Datasets published, FAIR assessment, depositor cases",
+     "de": "Veröffentlichte Datensätze, FAIR-Bewertung, Fälle von Einstellenden"
+    },
+    "other": {
+     "en": "Services or projects using the terms, mapping examples",
+     "de": "Dienste oder Projekte, die die Begriffe nutzen, Mapping-Beispiele"
+    },
+    "training": {
+     "en": "Learning outcomes, course cases, participant feedback",
+     "de": "Lernergebnisse, Kursfälle, Feedback der Teilnehmenden"
+    },
+    "consulting": {
+     "en": "Anonymised case studies, outcomes",
+     "de": "Anonymisierte Fallstudien, Ergebnisse"
+    },
+    "process": {
+     "en": "Worked example from a real project, time savings",
+     "de": "Durchgerechnetes Beispiel aus einem realen Projekt, Zeitersparnis"
+    }
+   },
+   "evidence": [
+    {
+     "en": "Short statement of need, target group and added value",
+     "de": "Kurze Aussage zu Bedarf, Zielgruppe und Mehrwert"
+    },
+    {
+     "en": "Two application examples with links or references",
+     "de": "Zwei Anwendungsbeispiele mit Links oder Quellen"
+    },
+    {
+     "en": "FAIR contribution statement",
+     "de": "Aussage zum FAIR-Beitrag"
+    },
+    {
+     "en": "Evaluation or user involvement (survey, workshop, feedback)",
+     "de": "Evaluation oder Einbindung der Nutzenden (Umfrage, Workshop, Rückmeldung)"
+    },
+    {
+     "en": "Letters or statements from the community, if available",
+     "de": "Briefe oder Stellungnahmen aus der Community, falls vorhanden"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**Be specific.** \"Supports FAIR data\" is too general. Say which of F, A, I, R and how.",
+     "de": "**Seien Sie konkret.** „Unterstützt FAIRe Daten“ ist zu allgemein. Sagen Sie, welches von F, A, I, R und wie."
+    },
+    {
+     "en": "Name the target group precisely, as the criterion asks.",
+     "de": "Benennen Sie die Zielgruppe genau, wie das Kriterium es verlangt."
+    },
+    {
+     "en": "Examples carry the criterion. Provide at least two that others can check.",
+     "de": "Beispiele tragen das Kriterium. Geben Sie mindestens zwei an, die andere prüfen können."
+    },
+    {
+     "en": "Added value can be qualitative if numbers are not available.",
+     "de": "Der Mehrwert kann qualitativ sein, wenn keine Zahlen vorliegen."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "Purpose",
+      "de": "Zweck"
+     },
+     "hint": {
+      "en": "The RDM need is concrete and the FAIR contribution is stated.",
+      "de": "Der FDM-Bedarf ist konkret und der FAIR-Beitrag ist genannt."
+     },
+     "example": {
+      "en": "Need: [concrete problem]. Contribution to FAIR: [F/A/I/R aspects].",
+      "de": "Bedarf: [konkretes Problem]. Beitrag zu FAIR: [F/A/I/R-Aspekte]."
+     }
+    },
+    {
+     "q": {
+      "en": "Target group",
+      "de": "Zielgruppe"
+     },
+     "hint": {
+      "en": "The target group is named as precisely as possible.",
+      "de": "Die Zielgruppe ist so genau wie möglich benannt."
+     },
+     "example": {
+      "en": "Target group: [discipline, role].",
+      "de": "Zielgruppe: [Disziplin, Rolle]."
+     }
+    },
+    {
+     "q": {
+      "en": "Added value",
+      "de": "Mehrwert"
+     },
+     "hint": {
+      "en": "The benefit is specific: time, quality or FAIRness.",
+      "de": "Der Nutzen ist konkret: Zeit, Qualität oder FAIRness."
+     },
+     "example": {
+      "en": "Added value: [for example saves x hours per dataset]. Users evaluated by [survey / workshop, date].",
+      "de": "Mehrwert: [zum Beispiel spart x Stunden je Datensatz]. Nutzende evaluiert durch [Umfrage / Workshop, Datum]."
+     }
+    },
+    {
+     "q": {
+      "en": "Examples",
+      "de": "Beispiele"
+     },
+     "hint": {
+      "en": "At least 2 examples can be traced, with a link, project or workflow.",
+      "de": "Mindestens 2 Beispiele sind nachvollziehbar, mit Link, Projekt oder Workflow."
+     },
+     "example": {
+      "en": "Examples: [example 1, link], [example 2, link].",
+      "de": "Beispiele: [Beispiel 1, Link], [Beispiel 2, Link]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "All four checks are yes, with 2 traceable examples",
+      "de": "Alle vier Prüfpunkte sind mit Ja beantwortet, mit 2 nachvollziehbaren Beispielen"
+     },
+     "when": {
+      "required": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    },
+    {
+     "result": "Partly met",
+     "rule": {
+      "en": "Purpose and target group are clear, but examples or value are thin, with a dated plan",
+      "de": "Zweck und Zielgruppe sind klar, Beispiele oder Mehrwert aber dünn, mit terminiertem Plan"
+     },
+     "when": {
+      "required": [
+       0,
+       1
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "General claims only, no examples",
+      "de": "Nur allgemeine Aussagen, keine Beispiele"
+     }
+    }
+   ],
+   "scoringIntro": {
+    "en": "The reviewer checks two concrete application examples in detail.",
+    "de": "Die prüfende Person prüft zwei konkrete Anwendungsbeispiele im Detail."
+   },
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Purpose and benefit cannot be reduced to a threshold. Concrete examples carry the rating.",
+    "de": "Zweck und Nutzen lassen sich nicht auf einen Schwellenwert reduzieren. Konkrete Beispiele tragen die Bewertung."
+   },
+   "tags": []
+  },
+  {
+   "id": "k12",
+   "number": 12,
+   "title": {
+    "en": "Use and acceptance",
+    "de": "Nutzung und Akzeptanz"
+   },
+   "category": "fachlich",
+   "form": "binary",
+   "checklistLabel": "Checks",
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is accepted by a sufficiently large part of its community. This is shown mainly through actual use.",
+      "de": "Der Dienst ist in seiner Community ausreichend breit akzeptiert. Das wird vor allem durch die tatsächliche Nutzung belegt."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Usage metrics that fit the service are defined and collected regularly. A qualitative description can add to them or replace them.",
+      "de": "Zum Dienst passende Nutzungsmetriken sind festgelegt und werden regelmäßig erhoben. Eine qualitative Beschreibung kann sie ergänzen oder ersetzen."
+     }
+    },
+    {
+     "label": "Optional",
+     "text": {
+      "en": "If no usage data exists yet, it is explained how use is estimated today and how it will be shown in future. (Usage data is not required at the time of review.)",
+      "de": "Liegen noch keine Nutzungsdaten vor, ist erklärt, wie die Nutzung heute eingeschätzt wird und wie sie künftig gezeigt werden soll. (Nutzungsdaten sind zum Zeitpunkt der Prüfung nicht erforderlich.)"
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The metrics are collected for defined periods, for example daily or monthly. Manual collection is fine for now, automatic collection is better. All indicators can be provided per calendar year.",
+      "de": "Die Metriken werden für festgelegte Zeiträume erhoben, zum Beispiel täglich oder monatlich. Manuelle Erhebung ist vorerst in Ordnung, automatische ist besser. Alle Indikatoren können je Kalenderjahr geliefert werden."
+     }
+    },
+    {
+     "label": "Optional",
+     "text": {
+      "en": "Possible indicators are active users, communities or institutions reached, storage used, data products and publications. Several metrics can be combined. (Optional.)",
+      "de": "Mögliche Indikatoren sind aktive Nutzende, erreichte Communities oder Institutionen, belegter Speicher, Datenprodukte und Publikationen. Mehrere Metriken können kombiniert werden. (Optional.)"
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "If metrics are missing, use is described qualitatively, for example with feedback, documented use cases or integration in research projects.",
+      "de": "Fehlen Metriken, wird die Nutzung qualitativ beschrieben, zum Beispiel mit Rückmeldungen, dokumentierten Anwendungsfällen oder der Einbindung in Forschungsprojekte."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Active users per period, logins, institutions, API calls, releases and downloads",
+     "de": "Aktive Nutzende pro Zeitraum, Logins, Institutionen, API-Aufrufe, Releases und Downloads"
+    },
+    "storage": {
+     "en": "Stored data volume, number of datasets, downloads, depositors",
+     "de": "Gespeichertes Datenvolumen, Anzahl der Datensätze, Downloads, Einstellende"
+    },
+    "other": {
+     "en": "Number of terms or profiles, reuse in other services, external adoption",
+     "de": "Anzahl der Begriffe oder Profile, Nachnutzung in anderen Diensten, externe Übernahme"
+    },
+    "training": {
+     "en": "Participants, courses held, material downloads, reuse",
+     "de": "Teilnehmende, durchgeführte Kurse, Material-Downloads, Nachnutzung"
+    },
+    "consulting": {
+     "en": "Cases, groups advised, follow-up requests",
+     "de": "Fälle, beratene Gruppen, Folgeanfragen"
+    },
+    "process": {
+     "en": "Groups using it, runs, adoption by others",
+     "de": "Nutzende Gruppen, Läufe, Übernahme durch andere"
+    }
+   },
+   "evidence": [
+    {
+     "en": "List of defined indicators, with period and collection method (manual or automatic)",
+     "de": "Liste der definierten Indikatoren, mit Zeitraum und Erhebungsmethode (manuell oder automatisch)"
+    },
+    {
+     "en": "Latest figures, ideally for a full calendar year",
+     "de": "Aktuelle Zahlen, idealerweise für ein volles Kalenderjahr"
+    },
+    {
+     "en": "For qualitative answers: feedback, documented use cases or project references, with dates",
+     "de": "Bei qualitativen Antworten: Rückmeldungen, dokumentierte Anwendungsfälle oder Projektreferenzen, mit Datum"
+    },
+    {
+     "en": "Short plan for future measurement, with a date",
+     "de": "Kurzer Plan für die künftige Messung, mit Datum"
+    }
+   ],
+   "tips": [
+    {
+     "en": "**Combine metrics** if useful. The criterion says several can be combined.",
+     "de": "**Kombinieren Sie Metriken**, wenn sinnvoll. Das Kriterium sagt, dass mehrere kombiniert werden können."
+    },
+    {
+     "en": "Choose indicators tied to the goal of the service.",
+     "de": "Wählen Sie Indikatoren, die zum Ziel des Dienstes passen."
+    },
+    {
+     "en": "\"No data yet\" is acceptable if you explain the estimate and the plan.",
+     "de": "„Noch keine Daten“ ist akzeptabel, wenn Sie die Einschätzung und den Plan erklären."
+    },
+    {
+     "en": "Report aggregates where personal data is a concern (see criterion 5).",
+     "de": "Berichten Sie Aggregate, wo personenbezogene Daten ein Thema sind (siehe Kriterium 5)."
+    }
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "1 Indicators",
+      "de": "1 Indikatoren"
+     },
+     "hint": {
+      "en": "Usage indicators that fit the goal of the service are defined.",
+      "de": "Nutzungsindikatoren, die zum Ziel des Dienstes passen, sind festgelegt."
+     },
+     "example": {
+      "en": "Indicators: [active users per month, institutions, stored data volume], collected [automatically / manually] each [period].",
+      "de": "Indikatoren: [aktive Nutzende pro Monat, Institutionen, gespeichertes Datenvolumen], erhoben [automatisch / manuell] je [Zeitraum]."
+     }
+    },
+    {
+     "q": {
+      "en": "2 Figures",
+      "de": "2 Zahlen"
+     },
+     "hint": {
+      "en": "The latest figures are given for a stated period, with a checkable source.",
+      "de": "Die aktuellen Zahlen sind für einen genannten Zeitraum angegeben, mit prüfbarer Quelle."
+     },
+     "example": {
+      "en": "Latest figures ([month/year]): [values]. Source: [link or report].",
+      "de": "Aktuelle Zahlen ([Monat/Jahr]): [Werte]. Quelle: [Link oder Bericht]."
+     }
+    },
+    {
+     "q": {
+      "en": "3 Qualitative evidence",
+      "de": "3 Qualitative Nachweise"
+     },
+     "hint": {
+      "en": "If figures are missing, qualitative evidence is listed: feedback, use cases or integration in projects.",
+      "de": "Fehlen Zahlen, sind qualitative Nachweise aufgelistet: Rückmeldungen, Anwendungsfälle oder Einbindung in Projekte."
+     },
+     "example": {
+      "en": "Qualitative evidence ([date]): feedback from [workshops / users], use cases [list], integration in [projects].",
+      "de": "Qualitative Nachweise ([Datum]): Rückmeldungen aus [Workshops / von Nutzenden], Anwendungsfälle [Liste], Einbindung in [Projekte]."
+     }
+    },
+    {
+     "q": {
+      "en": "4 Plan",
+      "de": "4 Plan"
+     },
+     "hint": {
+      "en": "If the data is incomplete, a dated plan to collect it exists. Answer N/A if the data is complete.",
+      "de": "Sind die Daten unvollständig, existiert ein terminierter Plan zur Erhebung. Antworten Sie mit „Nicht anwendbar“, wenn die Daten vollständig sind."
+     },
+     "example": {
+      "en": "Planned: [indicators / automation] by [date].",
+      "de": "Geplant: [Indikatoren / Automatisierung] bis [Datum]."
+     }
+    }
+   ],
+   "levels": [
+    {
+     "result": "Met",
+     "rule": {
+      "en": "The latest statistics are given (figures with a period and a checkable source), the indicators fit the service goal, and a dated plan exists if data is incomplete. For new services, listed qualitative evidence plus a dated plan counts as the latest statistics",
+      "de": "Die aktuellen Statistiken werden genannt (Zahlen mit Zeitraum und prüfbarer Quelle), die Indikatoren passen zum Dienstziel, und bei unvollständigen Daten existiert ein terminierter Plan. Bei neuen Diensten zählen aufgelistete qualitative Nachweise plus ein terminierter Plan als aktuelle Statistik"
+     },
+     "when": {
+      "required": [
+       0,
+       3
+      ],
+      "requiredAny": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "result": "Not met",
+     "rule": {
+      "en": "No latest statistics, no period, no source, only generic claims (\"widely used\"), or no dated plan where data is incomplete",
+      "de": "Keine aktuellen Statistiken, kein Zeitraum, keine Quelle, nur allgemeine Aussagen („weit verbreitet“), oder bei unvollständigen Daten kein terminierter Plan"
+     }
+    }
+   ],
+   "scoringIntro": "",
+   "scoringNote": {
+    "en": "Usage data does not have to exist at the time of review. The qualitative route keeps the rule consistent with this.",
+    "de": "Nutzungsdaten müssen zum Zeitpunkt der Prüfung nicht vorliegen. Der qualitative Weg hält die Regel damit konsistent."
+   },
+   "whyForm": "",
+   "tags": []
+  },
+  {
+   "id": "k13",
+   "number": 13,
+   "title": {
+    "en": "National relevance and link to the NFDI",
+    "de": "Nationale Bedeutung und Bezug zur NFDI"
+   },
+   "category": "strategisch",
+   "form": "freetext",
+   "checklistLabel": null,
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is available to researchers or the target group at least across Germany.",
+      "de": "Der Dienst steht Forschenden bzw. der Zielgruppe mindestens deutschlandweit zur Verfügung."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is usually run and owned by one or more NFDI member organisations that are part of the applying consortium.",
+      "de": "Der Dienst wird in der Regel von einer oder mehreren NFDI-Mitgliedsorganisationen betrieben und verantwortet, die dem beantragenden Konsortium angehören."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The link to the goals of the NFDI under the Bund-Länder-Vereinbarung or the statutes is clearly shown, for example by addressing discipline-specific or cross-cutting RDM needs, or by being embedded in one or more consortia.",
+      "de": "Der Bezug zu den Zielen der NFDI gemäß Bund-Länder-Vereinbarung bzw. Satzung ist klar dargelegt, zum Beispiel durch die Adressierung fachspezifischer oder übergreifender FDM-Bedarfe oder durch die Einbettung in ein oder mehrere Konsortien."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Access conditions, operating institution, consortium role.",
+     "de": "Zugangsbedingungen, betreibende Einrichtung, Rolle im Konsortium."
+    },
+    "storage": {
+     "en": "Who may deposit and access, which institutions operate it.",
+     "de": "Wer einstellen und zugreifen darf, welche Einrichtungen es betreiben."
+    },
+    "training": {
+     "en": "Who can attend nationwide, which institutions organise it.",
+     "de": "Wer deutschlandweit teilnehmen kann, welche Einrichtungen es veranstalten."
+    },
+    "consulting": {
+     "en": "Who may request advice, which institutions provide it.",
+     "de": "Wer Beratung anfragen darf, welche Einrichtungen sie anbieten."
+    },
+    "process": {
+     "en": "Which institutions use or run the process.",
+     "de": "Welche Einrichtungen den Prozess nutzen oder betreiben."
+    },
+    "other": {
+     "en": "Which communities adopt it and who maintains it.",
+     "de": "Welche Communities es übernehmen und wer es pflegt."
+    }
+   },
+   "evidence": [
+    {
+     "en": "Access conditions: who can use it and any restrictions",
+     "de": "Zugangsbedingungen: wer es nutzen kann und welche Einschränkungen gelten"
+    },
+    {
+     "en": "Operating institution and proof of NFDI e.V. and consortium membership",
+     "de": "Betreibende Einrichtung und Nachweis der Mitgliedschaft im NFDI e.V. und im Konsortium"
+    },
+    {
+     "en": "A short paragraph citing the BLV or the statutes and the RDM need addressed",
+     "de": "Ein kurzer Absatz mit Bezug auf die BLV oder die Satzung und den adressierten FDM-Bedarf"
+    },
+    {
+     "en": "Consortium role (proposing or using consortia)",
+     "de": "Rolle im Konsortium (vorschlagende oder nutzende Konsortien)"
+    },
+    {
+     "en": "Use or demand that shows national relevance",
+     "de": "Nutzung oder Nachfrage, die die nationale Relevanz zeigt"
+    }
+   ],
+   "tips": [
+    {
+     "en": "Availability beyond Germany is fine. The service must be available at least across Germany.",
+     "de": "Verfügbarkeit über Deutschland hinaus ist in Ordnung. Der Dienst muss mindestens deutschlandweit verfügbar sein."
+    },
+    {
+     "en": "Operators that are not NFDI members are possible in exceptional cases. Explain who is responsible and how the link to a member is secured.",
+     "de": "Betreiber, die keine NFDI-Mitglieder sind, sind in Ausnahmefällen möglich. Erklären Sie, wer verantwortlich ist und wie die Verbindung zu einem Mitglied gesichert ist."
+    },
+    {
+     "en": "Disciplinary and cross-cutting services differ in how they show the link: community and consortium versus many disciplines.",
+     "de": "Disziplinäre und übergreifende Dienste unterscheiden sich darin, wie sie den Bezug zeigen: Community und Konsortium gegenüber vielen Disziplinen."
+    }
+   ],
+   "questions": [],
+   "levels": [],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Strategic criteria are answered in free text and are not scored.",
+    "de": "Strategische Kriterien werden im Freitext beantwortet und nicht bewertet."
+   },
+   "tags": [
+    "Survey",
+    "information"
+   ]
+  },
+  {
+   "id": "k14",
+   "number": 14,
+   "title": {
+    "en": "Open source",
+    "de": "Open Source"
+   },
+   "category": "strategisch",
+   "form": "freetext",
+   "checklistLabel": null,
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is preferably based on open-source software.",
+      "de": "Der Dienst basiert bevorzugt auf Open-Source-Software."
+     }
+    },
+    {
+     "label": "Mandatory",
+     "text": {
+      "en": "Software components developed by the service itself are published under an open-source licence recognised by the OSI, for example MIT, Apache 2.0 or GPL-3.0.",
+      "de": "Vom Dienst selbst entwickelte Software-Komponenten sind unter einer von der OSI anerkannten Open-Source-Lizenz veröffentlicht, zum Beispiel MIT, Apache 2.0 oder GPL-3.0."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is classified as fully, partly or not open source. If proprietary components are used, a short reason explains why no open alternative is used.",
+      "de": "Der Dienst ist als vollständig, teilweise oder nicht Open Source eingeordnet. Werden proprietäre Komponenten genutzt, erklärt eine kurze Begründung, warum keine offene Alternative eingesetzt wird."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "A link to the public source code repository and the name of the licence are given.",
+      "de": "Ein Link zum öffentlichen Quellcode-Repositorium und der Name der Lizenz sind angegeben."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Repository link, licence file, list of third-party licences.",
+     "de": "Repositorium-Link, Lizenzdatei, Liste der Lizenzen Dritter."
+    },
+    "storage": {
+     "en": "Open platform software and its licence, plus any proprietary hosting.",
+     "de": "Offene Plattform-Software und ihre Lizenz, plus gegebenenfalls proprietäres Hosting."
+    },
+    "training": {
+     "en": "Open licence for materials (e.g. CC-BY) instead of software licence.",
+     "de": "Offene Lizenz für Materialien (z. B. CC-BY) statt einer Softwarelizenz."
+    },
+    "consulting": {
+     "en": "Usually not applicable; state open documentation if any.",
+     "de": "Meist nicht anwendbar; offene Dokumentation angeben, falls vorhanden."
+    },
+    "process": {
+     "en": "Open documentation or workflow definitions with a licence.",
+     "de": "Offene Dokumentation oder Workflow-Definitionen mit Lizenz."
+    },
+    "other": {
+     "en": "Open licence for the vocabulary or standard text and tools.",
+     "de": "Offene Lizenz für den Vokabular- oder Standardtext und die Werkzeuge."
+    }
+   },
+   "evidence": [
+    {
+     "en": "Public repository link",
+     "de": "Link zum öffentlichen Repositorium"
+    },
+    {
+     "en": "Licence file in the repository root (OSI-approved)",
+     "de": "Lizenzdatei im Stammverzeichnis des Repositoriums (OSI-anerkannt)"
+    },
+    {
+     "en": "List of third-party components and licences (e.g. SBOM)",
+     "de": "Liste der Komponenten Dritter und Lizenzen (z. B. SBOM)"
+    },
+    {
+     "en": "For proprietary parts: short justification and a replacement plan",
+     "de": "Für proprietäre Teile: kurze Begründung und ein Ersatzplan"
+    },
+    {
+     "en": "Citable release (e.g. DOI)",
+     "de": "Zitierfähiges Release (z. B. DOI)"
+    }
+   ],
+   "tips": [
+    {
+     "en": "\"Partly\" is a valid answer; classify honestly.",
+     "de": "„Teilweise“ ist eine gültige Antwort; klassifizieren Sie ehrlich."
+    },
+    {
+     "en": "A licence like \"free for research use only\" is not OSI-approved.",
+     "de": "Eine Lizenz wie „nur für Forschungszwecke kostenlos“ ist nicht OSI-anerkannt."
+    },
+    {
+     "en": "A private or on-request repository does not meet the criterion.",
+     "de": "Ein privates oder nur auf Anfrage zugängliches Repositorium erfüllt das Kriterium nicht."
+    },
+    {
+     "en": "Licence compatibility questions belong to your institution's legal or open-source contact.",
+     "de": "Fragen zur Lizenzkompatibilität gehören zur Rechtsabteilung oder zur Open-Source-Ansprechperson Ihrer Einrichtung."
+    }
+   ],
+   "questions": [],
+   "levels": [],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Strategic criteria are answered in free text and are not scored.",
+    "de": "Strategische Kriterien werden im Freitext beantwortet und nicht bewertet."
+   },
+   "tags": [
+    "Survey",
+    "information"
+   ]
+  },
+  {
+   "id": "k15",
+   "number": 15,
+   "title": {
+    "en": "Non-profit principle",
+    "de": "Non-Profit-Prinzip"
+   },
+   "category": "strategisch",
+   "form": "freetext",
+   "checklistLabel": null,
+   "asks": [
+    {
+     "label": "Should",
+     "text": {
+      "en": "The service is provided on a non-profit basis within the NFDI. Its aim is not profit or financial surplus.",
+      "de": "Der Dienst wird innerhalb der NFDI gemeinnützig bereitgestellt. Sein Ziel ist nicht Gewinn oder finanzieller Überschuss."
+     }
+    },
+    {
+     "label": "Optional",
+     "text": {
+      "en": "Other uses, such as contract research or services for commercial parties, are allowed but are regulated separately and in line with tax law. (Optional.)",
+      "de": "Weitere Nutzungen, etwa Auftragsforschung oder Leistungen für kommerzielle Akteure, sind erlaubt, werden aber gesondert und steuerrechtlich konform geregelt. (Optional.)"
+     }
+    },
+    {
+     "label": "Optional",
+     "text": {
+      "en": "The service does not have to be free of charge. Fees may cover the costs of operation, maintenance, support or infrastructure, but not more. (Optional.)",
+      "de": "Der Dienst muss nicht kostenfrei sein. Gebühren dürfen die Kosten für Betrieb, Wartung, Support oder Infrastruktur decken, aber nicht mehr. (Optional.)"
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "Income is used to maintain and further develop the service.",
+      "de": "Einnahmen werden für Erhalt und Weiterentwicklung des Dienstes verwendet."
+     }
+    },
+    {
+     "label": "Should",
+     "text": {
+      "en": "The fee model is transparent and published.",
+      "de": "Das Gebührenmodell ist transparent und veröffentlicht."
+     }
+    }
+   ],
+   "typeHelp": {
+    "software": {
+     "en": "Hosting and operating costs, any fees, and how income is used.",
+     "de": "Hosting- und Betriebskosten, etwaige Gebühren und wie die Einnahmen verwendet werden."
+    },
+    "storage": {
+     "en": "Storage or hosting fees, cost model.",
+     "de": "Speicher- oder Hosting-Gebühren, Kostenmodell."
+    },
+    "training": {
+     "en": "Course fees or free participation, cost coverage.",
+     "de": "Kursgebühren oder kostenfreie Teilnahme, Kostendeckung."
+    },
+    "consulting": {
+     "en": "Fee or free of charge, cost-covering principle.",
+     "de": "Gebühr oder kostenfrei, Kostendeckungsprinzip."
+    },
+    "process": {
+     "en": "Fees for running the process, if any.",
+     "de": "Gebühren für den Betrieb des Prozesses, falls vorhanden."
+    },
+    "other": {
+     "en": "Usually free; state any fees.",
+     "de": "Meist kostenfrei; nennen Sie etwaige Gebühren."
+    }
+   },
+   "evidence": [
+    {
+     "en": "Link to the fee model or price list, or a statement that none exists",
+     "de": "Link zum Gebührenmodell oder zur Preisliste, oder eine Aussage, dass keines existiert"
+    },
+    {
+     "en": "Funding source",
+     "de": "Finanzierungsquelle"
+    },
+    {
+     "en": "How income is used (cost centre, budget line)",
+     "de": "Wie Einnahmen verwendet werden (Kostenstelle, Haushaltstitel)"
+    },
+    {
+     "en": "For commercial use: contract template or note that it is handled separately",
+     "de": "Bei kommerzieller Nutzung: Vertragsvorlage oder Hinweis, dass sie gesondert geregelt wird"
+    }
+   ],
+   "tips": [
+    {
+     "en": "The criterion does not require a free service; only profit or surplus is the red line.",
+     "de": "Das Kriterium verlangt keinen kostenfreien Dienst; nur Gewinn oder Überschuss ist die rote Linie."
+    },
+    {
+     "en": "Keep commercial use separate from the NFDI service description.",
+     "de": "Halten Sie kommerzielle Nutzung getrennt von der Beschreibung des NFDI-Dienstes."
+    },
+    {
+     "en": "Tax questions are for your institution's finance or legal office.",
+     "de": "Steuerfragen gehören zur Finanz- oder Rechtsabteilung Ihrer Einrichtung."
+    }
+   ],
+   "questions": [],
+   "levels": [],
+   "scoringIntro": "",
+   "scoringNote": "",
+   "whyForm": {
+    "en": "Strategic criteria are answered in free text and are not scored.",
+    "de": "Strategische Kriterien werden im Freitext beantwortet und nicht bewertet."
+   },
+   "tags": [
+    "Survey",
+    "information"
+   ]
+  }
+ ]
+}
