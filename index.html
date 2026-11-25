@@ -166,7 +166,7 @@ td button:focus-visible{outline:3px solid #000}
 /* 1. UI texts. To change a label, edit it in BOTH languages ('en' and 'de'). */
 var UI={
 en:{
-'skip':'Skip to main content','hdr.title':'NFDI service criteria · self-assessment','hdr.by':'Prototype by NFDI4Cat','hdr.ver':'Criteria version: {0}','hdr.loading':'Criteria: loading…','hdr.error':'Criteria: error','lang.label':'Language',
+'skip':'Skip to main content','hdr.title':'NFDI service criteria · self-assessment','hdr.by':'Prototype by NFDI4Cat','hdr.save':'Save (JSON)','hdr.savetip':'Save your answers as a file','start.save':'<strong>You can save your work at any time.</strong> This is optional. Your answers are kept automatically in this browser. If you want a copy as a file, use the button <em>Save (JSON)</em> between Back and Next on any page. It saves the whole assessment at once, not just the current page. You can load the file later with "Import saved answers".','hdr.ver':'Criteria version: {0}','hdr.loading':'Criteria: loading…','hdr.error':'Criteria: error','lang.label':'Language',
 'nav.aria':'Assessment steps','nav.steps':'Steps ({0}% done)','nav.start':'Start','nav.about':'About your service','nav.summary':'Summary and export',
 'stat.answered':'Answered','stat.na':'Not applicable','stat.open':'Open','chk.yes':'Yes','chk.no':'No','chk.na':'Not applicable',
 'start.eyebrow':'Self-assessment for NFDI services','start.title':'Assess your service against the NFDI criteria',
@@ -200,7 +200,7 @@ en:{
 'chkl.Checklist':'Checklist','chkl.Checks':'Checks','chkl.Tests to run':'Tests to run'
 },
 de:{
-'skip':'Zum Hauptinhalt springen','hdr.title':'NFDI-Dienstkriterien · Selbstbewertung','hdr.by':'Prototyp von NFDI4Cat','hdr.ver':'Kriterienversion: {0}','hdr.loading':'Kriterien: lädt…','hdr.error':'Kriterien: Fehler','lang.label':'Sprache',
+'skip':'Zum Hauptinhalt springen','hdr.title':'NFDI-Dienstkriterien · Selbstbewertung','hdr.by':'Prototyp von NFDI4Cat','hdr.save':'Speichern (JSON)','hdr.savetip':'Antworten als Datei speichern','start.save':'<strong>Sie können Ihre Arbeit jederzeit speichern.</strong> Das ist freiwillig. Ihre Antworten bleiben automatisch in diesem Browser erhalten. Wenn Sie eine Kopie als Datei möchten, nutzen Sie auf einer beliebigen Seite den Button <em>Speichern (JSON)</em> zwischen Zurück und Weiter. Er speichert die gesamte Bewertung auf einmal, nicht nur die aktuelle Seite. Die Datei können Sie später mit "Gespeicherte Antworten importieren" wieder laden.','hdr.ver':'Kriterienversion: {0}','hdr.loading':'Kriterien: lädt…','hdr.error':'Kriterien: Fehler','lang.label':'Sprache',
 'nav.aria':'Schritte der Selbstbewertung','nav.steps':'Schritte ({0} % erledigt)','nav.start':'Start','nav.about':'Zu Ihrem Dienst','nav.summary':'Zusammenfassung und Export',
 'stat.answered':'Beantwortet','stat.na':'Nicht anwendbar','stat.open':'Offen','chk.yes':'Ja','chk.no':'Nein','chk.na':'Nicht anwendbar',
 'start.eyebrow':'Selbstbewertung für NFDI-Dienste','start.title':'Bewerten Sie Ihren Dienst anhand der NFDI-Kriterien',
@@ -426,6 +426,7 @@ function renderStart(d,s,fallback,note){
   h+='<p>'+esc(t('start.intro'))+'</p>';
   h+='<ol><li>'+esc(t('start.l1'))+'</li><li>'+esc(t('start.l2',[d.criteria.length]))+'</li><li>'+esc(t('start.l3'))+'</li></ol>';
   h+='<div class="callout">'+t('start.privacy')+'</div>';
+  h+='<div class="callout">'+t('start.save')+'</div>';
   h+='<div class="callout warn">'+t('start.draft',[esc(d.version),esc(L(d.source))])+'</div>';
   var miss=countMissing(d,LANG);
   if(miss){h+='<div class="callout warn">'+esc(t('miss',[miss]))+'</div>';}
@@ -453,7 +454,7 @@ function renderAbout(d,s){
 function pager(s,d,isCrit){
   var n=stepCount(d);
   var next=(s.step===n-2)?t('pager.review'):t('pager.next');
-  return '<div class="pager"><button class="btn sec" type="button" data-prev>'+esc(t('pager.back'))+'</button><button class="btn" type="button" data-next>'+esc(next)+'</button></div>';
+  return '<div class="pager"><button class="btn sec" type="button" data-prev>'+esc(t('pager.back'))+'</button><button class="btn sec" type="button" data-act="dl-res" title="'+esc(t('hdr.savetip'))+'">'+esc(t('hdr.save'))+'</button><button class="btn" type="button" data-next>'+esc(next)+'</button></div>';
 }
 function renderCriterion(d,s,idx){
   var c=d.criteria[idx],a=ans(s,c.id),n=d.criteria.length,ty=s.meta.type;
@@ -632,7 +633,7 @@ function noteText(){
 function applyStatic(){
   document.documentElement.lang=LANG;
   var set=function(id,txt){var e=document.getElementById(id);if(e){e.textContent=txt;}};
-  set('skip',t('skip'));set('hdr-title',t('hdr.title'));set('hdr-by',t('hdr.by'));
+  set('skip',t('skip'));set('hdr-title',t('hdr.title'));set('hdr-by',t('hdr.by')); set('hdr-save',t('hdr.save'));
   var ver=document.getElementById('ver');
   if(ver){ver.textContent=DATA?t('hdr.ver',[DATA.version]):t('hdr.loading');}
   var nav=document.getElementById('nav');if(nav){nav.setAttribute('aria-label',t('nav.aria'));}
